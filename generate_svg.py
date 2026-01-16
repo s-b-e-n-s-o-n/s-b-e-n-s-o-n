@@ -248,12 +248,10 @@ text {{
             match = re.search(r'([\d,]+) \( \+([\d,]+), -([\d,]+) \)', loc_value)
             if match:
                 total, added, deleted = match.groups()
-                svg += f'<text x="{width // 2}" y="{y}" text-anchor="middle">'
-                svg += f'<tspan class="gray">{key_str} {dots} {total} ( </tspan>'
-                svg += f'<tspan class="green">+{added}</tspan>'
-                svg += f'<tspan class="gray">, </tspan>'
-                svg += f'<tspan class="red">-{deleted}</tspan>'
-                svg += f'<tspan class="gray"> )</tspan>'
+                svg += f'<text x="{width // 2}" y="{y}" text-anchor="middle" class="gray">'
+                svg += f'{key_str} {dots} {total} ( '
+                svg += f'<tspan class="green">+{added}</tspan>, '
+                svg += f'<tspan class="red">-{deleted}</tspan> )'
                 svg += '</text>\n'
             else:
                 svg += f'<text x="{width // 2}" y="{y}" text-anchor="middle" class="gray">{key_str} {dots} {loc_value}</text>\n'
