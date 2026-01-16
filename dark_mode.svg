@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1173" viewBox="0 0 800 1173">
+<style>
+@font-face {
+    src: local('Consolas'), local('Monaco'), local('Menlo');
+    font-family: 'MonoFallback';
+    font-display: swap;
+}
+text {
+    font-family: 'MonoFallback', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 14px;
+    white-space: pre;
+    dominant-baseline: text-before-edge;
+}
+.text { fill: #39c5cf; }
+.gray { fill: #6e7681; }
+.magenta { fill: #bc8cff; }
+.green { fill: #3fb950; }
+.red { fill: #f85149; }
+.orange { fill: #f0883e; }
+.yellow { fill: #d29922; }
+</style>
+<rect width="800" height="1173" fill="#0d1117" rx="10"/>
+<text x="400" y="30" text-anchor="middle" class="yellow">                                       ▒▓▓█████▓▓▓░                                       </text>
+<text x="400" y="43" text-anchor="middle" class="yellow">                                ▓█████████▓▓▓▓▓██████████▓                                </text>
+<text x="400" y="56" text-anchor="middle" class="yellow">                           ▓██████░░░░░░░░░░░░░░░░░░░░░░██████▒                           </text>
+<text x="400" y="69" text-anchor="middle" class="yellow">                        ▓████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒████▓                        </text>
+<text x="400" y="82" text-anchor="middle" class="yellow">                     ▓████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░████▓                     </text>
+<text x="400" y="95" text-anchor="middle" class="yellow">                   ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░████                   </text>
+<text x="400" y="108" text-anchor="middle" class="yellow">                 ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░████                 </text>
+<text x="400" y="121" text-anchor="middle" class="yellow">               ▒███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░███▒               </text>
+<text x="400" y="134" text-anchor="middle" class="yellow">              ███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░███              </text>
+<text x="400" y="147" text-anchor="middle" class="yellow">            ░██▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓██░            </text>
+<text x="400" y="160" text-anchor="middle" class="yellow">           ▓██▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██▓           </text>
+<text x="400" y="173" text-anchor="middle" class="yellow">          ▓██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██▓          </text>
+<text x="400" y="186" text-anchor="middle" class="yellow">         ▓██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██▓         </text>
+<text x="400" y="199" text-anchor="middle" class="yellow">        ▒██░░░░░░░░░░░░░░░░░░░░████▓░░░░░░░░░░░░░░░░░░▓████░░░░░░░░░░░░░░░░░░░░██▓        </text>
+<text x="400" y="212" text-anchor="middle" class="yellow">        ██▓░░░░░░░░░░░░░░░░░░░███████░░░░░░░░░░░░░░░░███████░░░░░░░░░░░░░░░░░░░▒██        </text>
+<text x="400" y="225" text-anchor="middle" class="yellow">       ███░░░░░░░░░░░░░░░░░░░████████░░░░░░░░░░░░░░░░████████░░░░░░░░░░░░░░░░░░░███       </text>
+<text x="400" y="238" text-anchor="middle" class="yellow">       ██▒░░░░░░░░░░░░░░░░░░░░███████░░░░░░░░░░░░░░░░███████░░░░░░░░░░░░░░░░░░░░░██       </text>
+<text x="400" y="251" text-anchor="middle" class="yellow">      ███░░░░░░░░░░░░░░░░░░░░░██████░░░░░░░░░░░░░░░░░░█████░░░░░░░░░░░░░░░░░░░░░░███      </text>
+<text x="400" y="264" text-anchor="middle" class="yellow">      ███░░░░░░░░░░░░░░░░░░░░░░░░▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░███      </text>
+<text x="400" y="277" text-anchor="middle" class="yellow">      ██▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒██      </text>
+<text x="400" y="290" text-anchor="middle" class="yellow">      ██▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██      </text>
+<text x="400" y="303" text-anchor="middle" class="yellow">      ██▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██      </text>
+<text x="400" y="316" text-anchor="middle" class="yellow">      ██▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒██      </text>
+<text x="400" y="329" text-anchor="middle" class="yellow">      ███░░░░░░░░░░░░░░▒█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█████▒░░░░░░░░░░░░░░▓██      </text>
+<text x="400" y="342" text-anchor="middle" class="yellow">      ███░░░░░░░░░░░░░█████▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒█████░░░░░░░░░░░░░███      </text>
+<text x="400" y="355" text-anchor="middle" class="yellow">       ██░░░░░░░░░░░░░▓█░███▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒███▒█▓░░░░░░░░░░░░░██░      </text>
+<text x="400" y="368" text-anchor="middle" class="yellow">       ███░░░░░░░░░░░░░░░░▓███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░███▓░░░░░░░░░░░░░░░░███       </text>
+<text x="400" y="381" text-anchor="middle" class="yellow">        ██▒░░░░░░░░░░░░░░░░░████░░░░░░░░░░░░░░░░░░░░░░░░░░████░░░░░░░░░░░░░░░░░░██▒       </text>
+<text x="400" y="394" text-anchor="middle" class="yellow">        ▓██░░░░░░░░░░░░░░░░░░▒█████▒░░░░░░░░░░░░░░░░░░▒█████▒░░░░░░░░░░░░░░░░░░███        </text>
+<text x="400" y="407" text-anchor="middle" class="yellow">         ███░░░░░░░░░░░░░░░░░░░▓████████░░░░░░░░░░████████▒░░░░░░░░░░░░░░░░░░░███         </text>
+<text x="400" y="420" text-anchor="middle" class="yellow">          ███░░░░░░░░░░░░░░░░░░░░░▒████████████████████░░░░░░░░░░░░░░░░░░░░░░███          </text>
+<text x="400" y="433" text-anchor="middle" class="yellow">           ███░░░░░░░░░░░░░░░░░░░░░░░░░▓▓████████▓▓░░░░░░░░░░░░░░░░░░░░░░░░░███           </text>
+<text x="400" y="446" text-anchor="middle" class="yellow">            ███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░███            </text>
+<text x="400" y="459" text-anchor="middle" class="yellow">             ███▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒███             </text>
+<text x="400" y="472" text-anchor="middle" class="yellow">               ███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░███░              </text>
+<text x="400" y="485" text-anchor="middle" class="yellow">                ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░████                </text>
+<text x="400" y="498" text-anchor="middle" class="yellow">                  ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░████                  </text>
+<text x="400" y="511" text-anchor="middle" class="yellow">                    ████▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░████                    </text>
+<text x="400" y="524" text-anchor="middle" class="yellow">                      ▓████▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒████▓                      </text>
+<text x="400" y="537" text-anchor="middle" class="yellow">                         ▓█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░█████▓                         </text>
+<text x="400" y="550" text-anchor="middle" class="yellow">                            ░████████░░░░░░░░░░░░░░░▒████████▒                            </text>
+<text x="400" y="563" text-anchor="middle" class="yellow">                                 ░██████████████████████░                                 </text>
+<text x="400" y="596" text-anchor="middle" class="gray">ai developer  ·  prompt whisperer  ·  token burner</text>
+<text x="400" y="636" text-anchor="middle" class="orange">▄▀▀  ▀▄ ▄▀ ▄▀▀  ▀▀▀█ ▄▀▀  ▄▀▄▀▄   ▀ ▄▀▀▄ ▄▀▀  ▄▀▀▄</text>
+<text x="400" y="649" text-anchor="middle" class="orange">▀▀█   ▀█   ▀▀█   ▀▀  ▓▀   █ ▀ █   █ █  █ ▓▀   █  █</text>
+<text x="400" y="662" text-anchor="middle" class="orange">▀▀▀   ▀    ▀▀▀   ▀   ▀▀▀  ▀   ▀   ▀ ▀  ▀ ▀    ▀▀▀ </text>
+<text x="400" y="685" text-anchor="middle" class="gray">Location: ........................................................................ NYC, NY</text>
+<text x="400" y="705" text-anchor="middle" class="gray">Shell: ............................................. living tissue over metal endoskeleton</text>
+<text x="400" y="725" text-anchor="middle" class="gray">Languages: .............................................. english, bad english, help files</text>
+<text x="400" y="745" text-anchor="middle" class="gray">Focus: .................................................... AI/ML, Developer Tools, waning</text>
+<text x="400" y="785" text-anchor="middle" class="magenta">▄▀▀  ▓   ▄▀▀▄ ▓  ▄ ▄▀▀▄ ▄▀▀    ▄▀▀  ▄▀▀▄ ▄▀▀▄ ▄▀▀ </text>
+<text x="400" y="798" text-anchor="middle" class="magenta">█    █   █▀▀▓ █  ▓ █  ▓ ▓▀     █    █  ▓ █  ▓ ▓▀  </text>
+<text x="400" y="811" text-anchor="middle" class="magenta"> ▀▀  ▀▀▀ ▀    ▀▀▀▀ ▀▀▀▀ ▀▀▀     ▀▀   ▀▀  ▀▀▀▀ ▀▀▀ </text>
+<text x="400" y="834" text-anchor="middle" class="gray">Sessions: ........................................................................... 3.8K</text>
+<text x="400" y="854" text-anchor="middle" class="gray">Messages: ......................................................................... 137.5K</text>
+<text x="400" y="874" text-anchor="middle" class="gray">Total Tokens: ................................................................... 12303.0M</text>
+<text x="400" y="894" text-anchor="middle" class="gray">Est. API Cost Saved: ............................................................. $22,299</text>
+<text x="400" y="934" text-anchor="middle" class="green">▄▀▀  ▀ ▀▀▀█ ▓  ▄ ▓  ▄ ▄▀▄   ▄▀▀  ▀▀▀█ ▄▀▀▄ ▀▀▀█ ▄▀▀ </text>
+<text x="400" y="947" text-anchor="middle" class="green">█ ▀▓ █  ▀▀  █▀▀▓ █  ▓ █▀▀▄  ▀▀█   ▀▀  █▀▀▓  ▀▀  ▀▀█ </text>
+<text x="400" y="960" text-anchor="middle" class="green"> ▀▀  ▀  ▀   ▀  ▀ ▀▀▀▀ ▀▀▀   ▀▀▀   ▀   ▀  ▀  ▀   ▀▀▀ </text>
+<text x="400" y="983" text-anchor="middle" class="gray">Repositories: ......................................................................... 21</text>
+<text x="400" y="1003" text-anchor="middle" class="gray">Contributed To: ....................................................................... 28</text>
+<text x="400" y="1023" text-anchor="middle" class="gray">Total Commits: ...................................................................... 3846</text>
+<text x="400" y="1043" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 117</text>
+<text x="400" y="1063" text-anchor="middle"><tspan class="gray">Lines of Code: .............................................. 66,424 ( </tspan><tspan class="green">+138,401</tspan><tspan class="gray">, </tspan><tspan class="red">-71,977</tspan><tspan class="gray"> )</tspan></text>
+<text x="400" y="1093" text-anchor="middle" class="gray">// TODO: write great footer</text>
+<text x="400" y="1123" text-anchor="middle" class="gray">Last Updated: 2026-01-15</text>
+</svg>

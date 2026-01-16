@@ -1,1 +1,9 @@
 README-simple.md
+
+# macOS launchd config (contains user paths)
+com.sbenson.profile-stats.plist
+
+# Python
+__pycache__/
+*.pyc
+*.pyo

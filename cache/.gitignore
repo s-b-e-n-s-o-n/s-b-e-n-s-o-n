@@ -1,0 +1,2 @@
+# Allow JSON files to be committed (needed for GitHub Actions)
+# Claude stats can only be generated locally, so we commit them

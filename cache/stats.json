@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-01-15T21:28:43.269984",
+  "claude": {
+    "input_tokens": 21559720,
+    "output_tokens": 16835459,
+    "cache_creation": 1034390125,
+    "cache_read": 11228142577,
+    "total_tokens": 12300927881,
+    "sessions": 3812,
+    "messages": 137451,
+    "cost_estimate": 22292.704797
+  },
+  "github": {
+    "repos": 21,
+    "commits": 3846,
+    "stars": 0,
+    "followers": 0,
+    "following": 0,
+    "contributed_repos": 28,
+    "prs": 117,
+    "issues": 37,
+    "loc_added": 138401,
+    "loc_deleted": 71977,
+    "loc_total": 66424
+  }
+}

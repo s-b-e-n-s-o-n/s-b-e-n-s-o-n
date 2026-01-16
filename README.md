@@ -1,44 +1,6 @@
-```ruby
-# ███████╗ ██████╗  ███████╗ ███╗   ██╗ ███████╗  ██████╗  ███╗   ██╗
-# ██╔════╝ ██╔══██╗ ██╔════╝ ████╗  ██║ ██╔════╝ ██╔═══██╗ ████╗  ██║
-# ███████╗ ██████╔╝ █████╗   ██╔██╗ ██║ ███████╗ ██║   ██║ ██╔██╗ ██║
-# ╚════██║ ██╔══██╗ ██╔══╝   ██║╚██╗██║ ╚════██║ ██║   ██║ ██║╚██╗██║
-# ███████║ ██████╔╝ ███████╗ ██║ ╚████║ ███████║ ╚██████╔╝ ██║ ╚████║
-# ╚══════╝ ╚═════╝  ╚══════╝ ╚═╝  ╚═══╝ ╚══════╝  ╚═════╝  ╚═╝  ╚═══╝
-#
-#                    > LLMs, lint, and luck
-#
-# ══════════════════════════════════════════════════════════════
-#  PROFILE
-# ══════════════════════════════════════════════════════════════
-
-user: s-b-e-n-s-o-n
-status: ONLINE
-
-# ══════════════════════════════════════════════════════════════
-#  CURRENTLY INTO
-# ══════════════════════════════════════════════════════════════
-
-interests:
-  - AI agents that actually do stuff
-  - Making APIs talk to each other
-  - Full-stack builds
-
-tools:
-  daily: [Python, TypeScript, React, FastAPI]
-  sometimes: [Vue, Svelte, Flask, Django]
-  databases: [Postgres, Redis, Mongo]
-
-# ══════════════════════════════════════════════════════════════
-#  FEATURED
-# ══════════════════════════════════════════════════════════════
-
-projects:
-  - name: portkey-admin-mcp
-    desc: "MCP server for Portkey AI Gateway admin"
-    url: github.com/s-b-e-n-s-o-n/portkey-admin-mcp
-
-  - name: agent-lab
-    desc: "AI agent experimentation environment"
-    url: github.com/s-b-e-n-s-o-n/agent-lab
-```
+<a href="https://github.com/s-b-e-n-s-o-n">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/s-b-e-n-s-o-n/s-b-e-n-s-o-n/main/dark_mode.svg">
+    <img alt="SBENSON's GitHub Profile" src="https://raw.githubusercontent.com/s-b-e-n-s-o-n/s-b-e-n-s-o-n/main/light_mode.svg">
+  </picture>
+</a>

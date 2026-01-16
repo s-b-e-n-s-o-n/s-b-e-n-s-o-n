@@ -1,0 +1,40 @@
+name: Update Profile Stats
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate SVGs
+        env:
+          # Use PAT for full repo access (including private repos)
+          # Create at: Settings > Developer settings > Personal access tokens
+          # Required scopes: repo, read:user
+          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        run: |
+          python generate_svg.py
+
+      - name: Commit and push
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add dark_mode.svg light_mode.svg cache/
+          git diff --staged --quiet || git commit -m "Update profile stats"
+          git push
