@@ -76,16 +76,16 @@ text {
 <text x="400" y="811" text-anchor="middle" class="magenta"> ▀▀  ▀▀▀ ▀    ▀▀▀▀ ▀▀▀▀ ▀▀▀     ▀▀   ▀▀  ▀▀▀▀ ▀▀▀ </text>
 <text x="400" y="834" text-anchor="middle" class="gray">Sessions: ........................................................................... 3.8K</text>
 <text x="400" y="854" text-anchor="middle" class="gray">Messages: ......................................................................... 137.5K</text>
-<text x="400" y="874" text-anchor="middle" class="gray">Total Tokens: ................................................................... 12303.0M</text>
-<text x="400" y="894" text-anchor="middle" class="gray">Est. API Cost Saved: ............................................................. $22,299</text>
+<text x="400" y="874" text-anchor="middle" class="gray">Total Tokens: ................................................................... 12300.9M</text>
+<text x="400" y="894" text-anchor="middle" class="gray">Est. API Cost Saved: ............................................................. $22,293</text>
 <text x="400" y="934" text-anchor="middle" class="green">▄▀▀  ▀ ▀▀▀█ ▓  ▄ ▓  ▄ ▄▀▄   ▄▀▀  ▀▀▀█ ▄▀▀▄ ▀▀▀█ ▄▀▀ </text>
 <text x="400" y="947" text-anchor="middle" class="green">█ ▀▓ █  ▀▀  █▀▀▓ █  ▓ █▀▀▄  ▀▀█   ▀▀  █▀▀▓  ▀▀  ▀▀█ </text>
 <text x="400" y="960" text-anchor="middle" class="green"> ▀▀  ▀  ▀   ▀  ▀ ▀▀▀▀ ▀▀▀   ▀▀▀   ▀   ▀  ▀  ▀   ▀▀▀ </text>
-<text x="400" y="983" text-anchor="middle" class="gray">Repositories: ......................................................................... 21</text>
-<text x="400" y="1003" text-anchor="middle" class="gray">Contributed To: ....................................................................... 28</text>
-<text x="400" y="1023" text-anchor="middle" class="gray">Total Commits: ...................................................................... 3846</text>
-<text x="400" y="1043" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 117</text>
-<text x="400" y="1063" text-anchor="middle"><tspan class="gray">Lines of Code: .............................................. 66,424 ( </tspan><tspan class="green">+138,401</tspan><tspan class="gray">, </tspan><tspan class="red">-71,977</tspan><tspan class="gray"> )</tspan></text>
+<text x="400" y="983" text-anchor="middle" class="gray">Repositories: ......................................................................... 12</text>
+<text x="400" y="1003" text-anchor="middle" class="gray">Contributed To: ........................................................................ 1</text>
+<text x="400" y="1023" text-anchor="middle" class="gray">Total Commits: ....................................................................... 318</text>
+<text x="400" y="1043" text-anchor="middle" class="gray">Pull Requests: ......................................................................... 3</text>
+<text x="400" y="1063" text-anchor="middle"><tspan class="gray">Lines of Code: .............................................. 66,379 ( </tspan><tspan class="green">+138,356</tspan><tspan class="gray">, </tspan><tspan class="red">-71,977</tspan><tspan class="gray"> )</tspan></text>
 <text x="400" y="1093" text-anchor="middle" class="gray">// TODO: write great footer</text>
-<text x="400" y="1123" text-anchor="middle" class="gray">Last Updated: 2026-01-15</text>
+<text x="400" y="1123" text-anchor="middle" class="gray">Last Updated: 2026-01-16</text>
 </svg>
