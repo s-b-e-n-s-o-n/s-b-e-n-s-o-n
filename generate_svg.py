@@ -244,17 +244,8 @@ text {{
             dots_len = content_width - len(key_str) - len(loc_value) - 2
             dots = '.' * max(dots_len, 3)
 
-            # Parse out the +number and -number for coloring
-            match = re.search(r'([\d,]+) \( \+([\d,]+), -([\d,]+) \)', loc_value)
-            if match:
-                total, added, deleted = match.groups()
-                svg += f'<text x="{width // 2}" y="{y}" text-anchor="middle" class="gray">'
-                svg += f'{key_str} {dots} {total} ( '
-                svg += f'<tspan class="green">+{added}</tspan>, '
-                svg += f'<tspan class="red">-{deleted}</tspan> )'
-                svg += '</text>\n'
-            else:
-                svg += f'<text x="{width // 2}" y="{y}" text-anchor="middle" class="gray">{key_str} {dots} {loc_value}</text>\n'
+            # Keep it simple - no tspans, mobile doesn't handle them well
+            svg += f'<text x="{width // 2}" y="{y}" text-anchor="middle" class="gray">{key_str} {dots} {loc_value}</text>\n'
         elif line:  # Non-empty line
             escaped = escape_xml(line)
             svg += f'<text x="{width // 2}" y="{y}" text-anchor="middle" class="{color}">{escaped}</text>\n'
