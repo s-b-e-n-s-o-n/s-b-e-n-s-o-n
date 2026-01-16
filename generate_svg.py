@@ -50,7 +50,7 @@ def generate_svg(mode="dark"):
     width = 800
     font_size = 14
     line_height_tight = 13  # For ASCII art blocks (slightly overlap to eliminate gaps)
-    line_height_normal = 20  # For stat lines (readable spacing)
+    line_height_normal = 24  # For stat lines (readable spacing, mobile-friendly)
     y_start = 30
     content_width = 90  # chars for stat lines
 
