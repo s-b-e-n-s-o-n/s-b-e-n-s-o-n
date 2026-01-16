@@ -244,8 +244,40 @@ text {{
             dots_len = content_width - len(key_str) - len(loc_value) - 2
             dots = '.' * max(dots_len, 3)
 
-            # Keep it simple - no tspans, mobile doesn't handle them well
-            svg += f'<text x="{width // 2}" y="{y}" text-anchor="middle" class="gray">{key_str} {dots} {loc_value}</text>\n'
+            # Use separate text elements instead of tspans for mobile compatibility
+            match = re.search(r'([\d,]+) \( \+([\d,]+), -([\d,]+) \)', loc_value)
+            if match:
+                total, added, deleted = match.groups()
+                # Build the full line to calculate positions
+                # Monospace: ~8.4px per char at 14px font
+                char_width = font_size * 0.6
+                full_line = f"{key_str} {dots} {total} ( +{added}, -{deleted} )"
+                line_width = len(full_line) * char_width
+                start_x = (width - line_width) / 2
+
+                # Gray prefix: "Lines of Code: ... total ( "
+                prefix = f"{key_str} {dots} {total} ( "
+                svg += f'<text x="{start_x}" y="{y}" class="gray">{prefix}</text>\n'
+
+                # Green: "+added"
+                green_x = start_x + len(prefix) * char_width
+                green_text = f"+{added}"
+                svg += f'<text x="{green_x}" y="{y}" class="green">{green_text}</text>\n'
+
+                # Gray: ", "
+                comma_x = green_x + len(green_text) * char_width
+                svg += f'<text x="{comma_x}" y="{y}" class="gray">, </text>\n'
+
+                # Red: "-deleted"
+                red_x = comma_x + 2 * char_width
+                red_text = f"-{deleted}"
+                svg += f'<text x="{red_x}" y="{y}" class="red">{red_text}</text>\n'
+
+                # Gray: " )"
+                suffix_x = red_x + len(red_text) * char_width
+                svg += f'<text x="{suffix_x}" y="{y}" class="gray"> )</text>\n'
+            else:
+                svg += f'<text x="{width // 2}" y="{y}" text-anchor="middle" class="gray">{key_str} {dots} {loc_value}</text>\n'
         elif line:  # Non-empty line
             escaped = escape_xml(line)
             svg += f'<text x="{width // 2}" y="{y}" text-anchor="middle" class="{color}">{escaped}</text>\n'
