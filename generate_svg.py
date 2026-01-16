@@ -50,7 +50,7 @@ def generate_svg(mode="dark"):
     width = 800
     font_size = 14
     line_height_tight = 13  # For ASCII art blocks (slightly overlap to eliminate gaps)
-    line_height_normal = 24  # For stat lines (readable spacing, mobile-friendly)
+    line_height_normal = 20  # For stat lines (readable spacing)
     y_start = 30
     content_width = 90  # chars for stat lines
 
@@ -248,12 +248,10 @@ text {{
             match = re.search(r'([\d,]+) \( \+([\d,]+), -([\d,]+) \)', loc_value)
             if match:
                 total, added, deleted = match.groups()
-                svg += f'<text x="{width // 2}" y="{y}" text-anchor="middle">'
-                svg += f'<tspan class="gray">{key_str} {dots} {total} ( </tspan>'
-                svg += f'<tspan class="green">+{added}</tspan>'
-                svg += f'<tspan class="gray">, </tspan>'
-                svg += f'<tspan class="red">-{deleted}</tspan>'
-                svg += f'<tspan class="gray"> )</tspan>'
+                svg += f'<text x="{width // 2}" y="{y}" text-anchor="middle" class="gray">'
+                svg += f'{key_str} {dots} {total} ( '
+                svg += f'<tspan class="green">+{added}</tspan>, '
+                svg += f'<tspan class="red">-{deleted}</tspan> )'
                 svg += '</text>\n'
             else:
                 svg += f'<text x="{width // 2}" y="{y}" text-anchor="middle" class="gray">{key_str} {dots} {loc_value}</text>\n'

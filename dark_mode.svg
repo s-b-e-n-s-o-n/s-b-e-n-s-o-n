@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1263" viewBox="0 0 800 1263">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1173" viewBox="0 0 800 1173">
 <style>
 @font-face {
     src: local('Consolas'), local('Monaco'), local('Menlo');
@@ -20,7 +20,7 @@ text {
 .orange { fill: #f0883e; }
 .yellow { fill: #d29922; }
 </style>
-<rect width="800" height="1263" fill="#0d1117" rx="10"/>
+<rect width="800" height="1173" fill="#0d1117" rx="10"/>
 <text x="400" y="30" text-anchor="middle" class="yellow">                                       ▒▓▓█████▓▓▓░                                       </text>
 <text x="400" y="43" text-anchor="middle" class="yellow">                                ▓█████████▓▓▓▓▓██████████▓                                </text>
 <text x="400" y="56" text-anchor="middle" class="yellow">                           ▓██████░░░░░░░░░░░░░░░░░░░░░░██████▒                           </text>
@@ -63,29 +63,29 @@ text {
 <text x="400" y="537" text-anchor="middle" class="yellow">                         ▓█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░█████▓                         </text>
 <text x="400" y="550" text-anchor="middle" class="yellow">                            ░████████░░░░░░░░░░░░░░░▒████████▒                            </text>
 <text x="400" y="563" text-anchor="middle" class="yellow">                                 ░██████████████████████░                                 </text>
-<text x="400" y="600" text-anchor="middle" class="gray">ai developer  ·  prompt whisperer  ·  token burner</text>
-<text x="400" y="648" text-anchor="middle" class="orange">▄▀▀  ▀▄ ▄▀ ▄▀▀  ▀▀▀█ ▄▀▀  ▄▀▄▀▄   ▀ ▄▀▀▄ ▄▀▀  ▄▀▀▄</text>
-<text x="400" y="661" text-anchor="middle" class="orange">▀▀█   ▀█   ▀▀█   ▀▀  ▓▀   █ ▀ █   █ █  █ ▓▀   █  █</text>
-<text x="400" y="674" text-anchor="middle" class="orange">▀▀▀   ▀    ▀▀▀   ▀   ▀▀▀  ▀   ▀   ▀ ▀  ▀ ▀    ▀▀▀ </text>
-<text x="400" y="699" text-anchor="middle" class="gray">Location: ........................................................................ NYC, NY</text>
-<text x="400" y="723" text-anchor="middle" class="gray">Shell: ............................................. living tissue over metal endoskeleton</text>
-<text x="400" y="747" text-anchor="middle" class="gray">Languages: .............................................. english, bad english, help files</text>
-<text x="400" y="771" text-anchor="middle" class="gray">Focus: .................................................... AI/ML, Developer Tools, waning</text>
-<text x="400" y="819" text-anchor="middle" class="magenta">▄▀▀  ▓   ▄▀▀▄ ▓  ▄ ▄▀▀▄ ▄▀▀    ▄▀▀  ▄▀▀▄ ▄▀▀▄ ▄▀▀ </text>
-<text x="400" y="832" text-anchor="middle" class="magenta">█    █   █▀▀▓ █  ▓ █  ▓ ▓▀     █    █  ▓ █  ▓ ▓▀  </text>
-<text x="400" y="845" text-anchor="middle" class="magenta"> ▀▀  ▀▀▀ ▀    ▀▀▀▀ ▀▀▀▀ ▀▀▀     ▀▀   ▀▀  ▀▀▀▀ ▀▀▀ </text>
-<text x="400" y="870" text-anchor="middle" class="gray">Sessions: .............................................................................. 2</text>
-<text x="400" y="894" text-anchor="middle" class="gray">Messages: ............................................................................ 102</text>
-<text x="400" y="918" text-anchor="middle" class="gray">Total Tokens: ....................................................................... 3.7M</text>
-<text x="400" y="942" text-anchor="middle" class="gray">Est. API Cost Saved: .................................................................. $6</text>
-<text x="400" y="990" text-anchor="middle" class="green">▄▀▀  ▀ ▀▀▀█ ▓  ▄ ▓  ▄ ▄▀▄   ▄▀▀  ▀▀▀█ ▄▀▀▄ ▀▀▀█ ▄▀▀ </text>
-<text x="400" y="1003" text-anchor="middle" class="green">█ ▀▓ █  ▀▀  █▀▀▓ █  ▓ █▀▀▄  ▀▀█   ▀▀  █▀▀▓  ▀▀  ▀▀█ </text>
-<text x="400" y="1016" text-anchor="middle" class="green"> ▀▀  ▀  ▀   ▀  ▀ ▀▀▀▀ ▀▀▀   ▀▀▀   ▀   ▀  ▀  ▀   ▀▀▀ </text>
-<text x="400" y="1041" text-anchor="middle" class="gray">Repositories: ......................................................................... 21</text>
-<text x="400" y="1065" text-anchor="middle" class="gray">Contributed To: ....................................................................... 28</text>
-<text x="400" y="1089" text-anchor="middle" class="gray">Total Commits: ...................................................................... 3846</text>
-<text x="400" y="1113" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 117</text>
-<text x="400" y="1137" text-anchor="middle"><tspan class="gray">Lines of Code: .............................................. 66,424 ( </tspan><tspan class="green">+138,401</tspan><tspan class="gray">, </tspan><tspan class="red">-71,977</tspan><tspan class="gray"> )</tspan></text>
-<text x="400" y="1173" text-anchor="middle" class="gray">// TODO: write great footer</text>
-<text x="400" y="1209" text-anchor="middle" class="gray">Last Updated: 2026-01-16</text>
+<text x="400" y="596" text-anchor="middle" class="gray">ai developer  ·  prompt whisperer  ·  token burner</text>
+<text x="400" y="636" text-anchor="middle" class="orange">▄▀▀  ▀▄ ▄▀ ▄▀▀  ▀▀▀█ ▄▀▀  ▄▀▄▀▄   ▀ ▄▀▀▄ ▄▀▀  ▄▀▀▄</text>
+<text x="400" y="649" text-anchor="middle" class="orange">▀▀█   ▀█   ▀▀█   ▀▀  ▓▀   █ ▀ █   █ █  █ ▓▀   █  █</text>
+<text x="400" y="662" text-anchor="middle" class="orange">▀▀▀   ▀    ▀▀▀   ▀   ▀▀▀  ▀   ▀   ▀ ▀  ▀ ▀    ▀▀▀ </text>
+<text x="400" y="685" text-anchor="middle" class="gray">Location: ........................................................................ NYC, NY</text>
+<text x="400" y="705" text-anchor="middle" class="gray">Shell: ............................................. living tissue over metal endoskeleton</text>
+<text x="400" y="725" text-anchor="middle" class="gray">Languages: .............................................. english, bad english, help files</text>
+<text x="400" y="745" text-anchor="middle" class="gray">Focus: .................................................... AI/ML, Developer Tools, waning</text>
+<text x="400" y="785" text-anchor="middle" class="magenta">▄▀▀  ▓   ▄▀▀▄ ▓  ▄ ▄▀▀▄ ▄▀▀    ▄▀▀  ▄▀▀▄ ▄▀▀▄ ▄▀▀ </text>
+<text x="400" y="798" text-anchor="middle" class="magenta">█    █   █▀▀▓ █  ▓ █  ▓ ▓▀     █    █  ▓ █  ▓ ▓▀  </text>
+<text x="400" y="811" text-anchor="middle" class="magenta"> ▀▀  ▀▀▀ ▀    ▀▀▀▀ ▀▀▀▀ ▀▀▀     ▀▀   ▀▀  ▀▀▀▀ ▀▀▀ </text>
+<text x="400" y="834" text-anchor="middle" class="gray">Sessions: .............................................................................. 2</text>
+<text x="400" y="854" text-anchor="middle" class="gray">Messages: ............................................................................ 144</text>
+<text x="400" y="874" text-anchor="middle" class="gray">Total Tokens: ....................................................................... 6.1M</text>
+<text x="400" y="894" text-anchor="middle" class="gray">Est. API Cost Saved: .................................................................. $9</text>
+<text x="400" y="934" text-anchor="middle" class="green">▄▀▀  ▀ ▀▀▀█ ▓  ▄ ▓  ▄ ▄▀▄   ▄▀▀  ▀▀▀█ ▄▀▀▄ ▀▀▀█ ▄▀▀ </text>
+<text x="400" y="947" text-anchor="middle" class="green">█ ▀▓ █  ▀▀  █▀▀▓ █  ▓ █▀▀▄  ▀▀█   ▀▀  █▀▀▓  ▀▀  ▀▀█ </text>
+<text x="400" y="960" text-anchor="middle" class="green"> ▀▀  ▀  ▀   ▀  ▀ ▀▀▀▀ ▀▀▀   ▀▀▀   ▀   ▀  ▀  ▀   ▀▀▀ </text>
+<text x="400" y="983" text-anchor="middle" class="gray">Repositories: ......................................................................... 21</text>
+<text x="400" y="1003" text-anchor="middle" class="gray">Contributed To: ....................................................................... 28</text>
+<text x="400" y="1023" text-anchor="middle" class="gray">Total Commits: ...................................................................... 3846</text>
+<text x="400" y="1043" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 117</text>
+<text x="400" y="1063" text-anchor="middle" class="gray">Lines of Code: .............................................. 66,424 ( <tspan class="green">+138,401</tspan>, <tspan class="red">-71,977</tspan> )</text>
+<text x="400" y="1093" text-anchor="middle" class="gray">// TODO: write great footer</text>
+<text x="400" y="1123" text-anchor="middle" class="gray">Last Updated: 2026-01-16</text>
 </svg>
