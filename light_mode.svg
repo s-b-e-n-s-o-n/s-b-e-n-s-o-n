@@ -74,19 +74,19 @@ text {
 <text x="400" y="785" text-anchor="middle" class="magenta">▄▀▀  ▓   ▄▀▀▄ ▓  ▄ ▄▀▀▄ ▄▀▀    ▄▀▀  ▄▀▀▄ ▄▀▀▄ ▄▀▀ </text>
 <text x="400" y="798" text-anchor="middle" class="magenta">█    █   █▀▀▓ █  ▓ █  ▓ ▓▀     █    █  ▓ █  ▓ ▓▀  </text>
 <text x="400" y="811" text-anchor="middle" class="magenta"> ▀▀  ▀▀▀ ▀    ▀▀▀▀ ▀▀▀▀ ▀▀▀     ▀▀   ▀▀  ▀▀▀▀ ▀▀▀ </text>
-<text x="400" y="834" text-anchor="middle" class="gray">Sessions: .............................................................................. 2</text>
-<text x="400" y="854" text-anchor="middle" class="gray">Messages: ............................................................................ 190</text>
-<text x="400" y="874" text-anchor="middle" class="gray">Total Tokens: ....................................................................... 9.4M</text>
-<text x="400" y="894" text-anchor="middle" class="gray">Est. API Cost Saved: ................................................................. $13</text>
+<text x="400" y="834" text-anchor="middle" class="gray">Sessions: ........................................................................... 3.8K</text>
+<text x="400" y="854" text-anchor="middle" class="gray">Messages: ......................................................................... 137.5K</text>
+<text x="400" y="874" text-anchor="middle" class="gray">Total Tokens: ...................................................................... 12.3B</text>
+<text x="400" y="894" text-anchor="middle" class="gray">Est. API Cost Saved: ............................................................. $22,293</text>
 <text x="400" y="934" text-anchor="middle" class="green">▄▀▀  ▀ ▀▀▀█ ▓  ▄ ▓  ▄ ▄▀▄   ▄▀▀  ▀▀▀█ ▄▀▀▄ ▀▀▀█ ▄▀▀ </text>
 <text x="400" y="947" text-anchor="middle" class="green">█ ▀▓ █  ▀▀  █▀▀▓ █  ▓ █▀▀▄  ▀▀█   ▀▀  █▀▀▓  ▀▀  ▀▀█ </text>
 <text x="400" y="960" text-anchor="middle" class="green"> ▀▀  ▀  ▀   ▀  ▀ ▀▀▀▀ ▀▀▀   ▀▀▀   ▀   ▀  ▀  ▀   ▀▀▀ </text>
-<text x="400" y="983" text-anchor="middle" class="gray">Repositories: ......................................................................... 21</text>
-<text x="400" y="1003" text-anchor="middle" class="gray">Contributed To: ....................................................................... 28</text>
-<text x="400" y="1023" text-anchor="middle" class="gray">Total Commits: ...................................................................... 3846</text>
-<text x="400" y="1043" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 117</text>
-<text x="22.0" y="1063" class="gray">Lines of Code: .............................................. 66,424 ( </text>
-<text x="618.4" y="1063" class="green">+138,401</text>
+<text x="400" y="983" text-anchor="middle" class="gray">Repositories: ......................................................................... 12</text>
+<text x="400" y="1003" text-anchor="middle" class="gray">Contributed To: ........................................................................ 1</text>
+<text x="400" y="1023" text-anchor="middle" class="gray">Total Commits: ....................................................................... 321</text>
+<text x="400" y="1043" text-anchor="middle" class="gray">Pull Requests: ......................................................................... 6</text>
+<text x="22.0" y="1063" class="gray">Lines of Code: .............................................. 66,379 ( </text>
+<text x="618.4" y="1063" class="green">+138,356</text>
 <text x="685.6" y="1063" class="gray">, </text>
 <text x="702.4" y="1063" class="red">-71,977</text>
 <text x="761.1999999999999" y="1063" class="gray"> )</text>
