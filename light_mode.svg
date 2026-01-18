@@ -81,14 +81,14 @@ text {
 <text x="400" y="934" text-anchor="middle" class="green">▄▀▀  ▀ ▀▀▀█ ▓  ▄ ▓  ▄ ▄▀▄   ▄▀▀  ▀▀▀█ ▄▀▀▄ ▀▀▀█ ▄▀▀ </text>
 <text x="400" y="947" text-anchor="middle" class="green">█ ▀▓ █  ▀▀  █▀▀▓ █  ▓ █▀▀▄  ▀▀█   ▀▀  █▀▀▓  ▀▀  ▀▀█ </text>
 <text x="400" y="960" text-anchor="middle" class="green"> ▀▀  ▀  ▀   ▀  ▀ ▀▀▀▀ ▀▀▀   ▀▀▀   ▀   ▀  ▀  ▀   ▀▀▀ </text>
-<text x="400" y="983" text-anchor="middle" class="gray">Repositories: ......................................................................... 12</text>
-<text x="400" y="1003" text-anchor="middle" class="gray">Contributed To: ........................................................................ 1</text>
-<text x="400" y="1023" text-anchor="middle" class="gray">Total Commits: ....................................................................... 353</text>
-<text x="400" y="1043" text-anchor="middle" class="gray">Pull Requests: ......................................................................... 6</text>
-<text x="22.0" y="1063" class="gray">Lines of Code: ............................................... 27,670 ( </text>
-<text x="626.8000000000001" y="1063" class="green">+88,480</text>
+<text x="400" y="983" text-anchor="middle" class="gray">Repositories: ......................................................................... 21</text>
+<text x="400" y="1003" text-anchor="middle" class="gray">Contributed To: ....................................................................... 30</text>
+<text x="400" y="1023" text-anchor="middle" class="gray">Total Commits: ...................................................................... 3896</text>
+<text x="400" y="1043" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 127</text>
+<text x="22.0" y="1063" class="gray">Lines of Code: .............................................. 58,082 ( </text>
+<text x="618.4" y="1063" class="green">+129,199</text>
 <text x="685.6" y="1063" class="gray">, </text>
-<text x="702.4" y="1063" class="red">-60,810</text>
+<text x="702.4" y="1063" class="red">-71,117</text>
 <text x="761.1999999999999" y="1063" class="gray"> )</text>
 <text x="400" y="1093" text-anchor="middle" class="gray">// TODO: write great footer</text>
 <text x="400" y="1123" text-anchor="middle" class="gray">Last Updated: 2026-01-18</text>
