@@ -74,10 +74,10 @@ text {
 <text x="400" y="785" text-anchor="middle" class="magenta">▄▀▀  ▓   ▄▀▀▄ ▓  ▄ ▄▀▀▄ ▄▀▀    ▄▀▀  ▄▀▀▄ ▄▀▀▄ ▄▀▀ </text>
 <text x="400" y="798" text-anchor="middle" class="magenta">█    █   █▀▀▓ █  ▓ █  ▓ ▓▀     █    █  ▓ █  ▓ ▓▀  </text>
 <text x="400" y="811" text-anchor="middle" class="magenta"> ▀▀  ▀▀▀ ▀    ▀▀▀▀ ▀▀▀▀ ▀▀▀     ▀▀   ▀▀  ▀▀▀▀ ▀▀▀ </text>
-<text x="400" y="834" text-anchor="middle" class="gray">Sessions: ........................................................................... 3.8K</text>
-<text x="400" y="854" text-anchor="middle" class="gray">Messages: ......................................................................... 137.5K</text>
+<text x="400" y="834" text-anchor="middle" class="gray">Sessions: ........................................................................... 3.7K</text>
+<text x="400" y="854" text-anchor="middle" class="gray">Messages: ......................................................................... 137.2K</text>
 <text x="400" y="874" text-anchor="middle" class="gray">Total Tokens: ...................................................................... 12.3B</text>
-<text x="400" y="894" text-anchor="middle" class="gray">Est. API Cost Saved: ............................................................. $22,293</text>
+<text x="400" y="894" text-anchor="middle" class="gray">Est. API Cost Saved: ............................................................. $22,252</text>
 <text x="400" y="934" text-anchor="middle" class="green">▄▀▀  ▀ ▀▀▀█ ▓  ▄ ▓  ▄ ▄▀▄   ▄▀▀  ▀▀▀█ ▄▀▀▄ ▀▀▀█ ▄▀▀ </text>
 <text x="400" y="947" text-anchor="middle" class="green">█ ▀▓ █  ▀▀  █▀▀▓ █  ▓ █▀▀▄  ▀▀█   ▀▀  █▀▀▓  ▀▀  ▀▀█ </text>
 <text x="400" y="960" text-anchor="middle" class="green"> ▀▀  ▀  ▀   ▀  ▀ ▀▀▀▀ ▀▀▀   ▀▀▀   ▀   ▀  ▀  ▀   ▀▀▀ </text>
@@ -85,10 +85,10 @@ text {
 <text x="400" y="1003" text-anchor="middle" class="gray">Contributed To: ....................................................................... 30</text>
 <text x="400" y="1023" text-anchor="middle" class="gray">Total Commits: ...................................................................... 3896</text>
 <text x="400" y="1043" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 127</text>
-<text x="22.0" y="1063" class="gray">Lines of Code: ............................................... 37,815 ( </text>
-<text x="626.8000000000001" y="1063" class="green">+78,917</text>
+<text x="22.0" y="1063" class="gray">Lines of Code: .............................................. 62,070 ( </text>
+<text x="618.4" y="1063" class="green">+133,947</text>
 <text x="685.6" y="1063" class="gray">, </text>
-<text x="702.4" y="1063" class="red">-41,102</text>
+<text x="702.4" y="1063" class="red">-71,877</text>
 <text x="761.1999999999999" y="1063" class="gray"> )</text>
 <text x="400" y="1093" text-anchor="middle" class="gray">// TODO: write great footer</text>
 <text x="400" y="1123" text-anchor="middle" class="gray">Last Updated: 2026-01-18</text>
