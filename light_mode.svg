@@ -83,13 +83,13 @@ text {
 <text x="400" y="960" text-anchor="middle" class="green"> ▀▀  ▀  ▀   ▀  ▀ ▀▀▀▀ ▀▀▀   ▀▀▀   ▀   ▀  ▀  ▀   ▀▀▀ </text>
 <text x="400" y="983" text-anchor="middle" class="gray">Repositories: ......................................................................... 23</text>
 <text x="400" y="1003" text-anchor="middle" class="gray">Contributed To: ....................................................................... 31</text>
-<text x="400" y="1023" text-anchor="middle" class="gray">Total Commits: ...................................................................... 3942</text>
-<text x="400" y="1043" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 136</text>
-<text x="22.0" y="1063" class="gray">Lines of Code: ................................................ 9,799 ( </text>
-<text x="626.8000000000001" y="1063" class="green">+20,803</text>
+<text x="400" y="1023" text-anchor="middle" class="gray">Total Commits: ...................................................................... 3947</text>
+<text x="400" y="1043" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 138</text>
+<text x="22.0" y="1063" class="gray">Lines of Code: ............................................... 27,939 ( </text>
+<text x="626.8000000000001" y="1063" class="green">+76,996</text>
 <text x="685.6" y="1063" class="gray">, </text>
-<text x="702.4" y="1063" class="red">-11,004</text>
+<text x="702.4" y="1063" class="red">-49,057</text>
 <text x="761.1999999999999" y="1063" class="gray"> )</text>
 <text x="400" y="1093" text-anchor="middle" class="gray">// TODO: write great footer</text>
-<text x="400" y="1123" text-anchor="middle" class="gray">Last Updated: 2026-01-23</text>
+<text x="400" y="1123" text-anchor="middle" class="gray">Last Updated: 2026-01-24</text>
 </svg>
