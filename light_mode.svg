@@ -84,12 +84,12 @@ text {
 <text x="400" y="983" text-anchor="middle" class="gray">Repositories: ......................................................................... 24</text>
 <text x="400" y="1003" text-anchor="middle" class="gray">Contributed To: ....................................................................... 31</text>
 <text x="400" y="1023" text-anchor="middle" class="gray">Total Commits: ...................................................................... 4014</text>
-<text x="400" y="1043" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 160</text>
-<text x="22.0" y="1063" class="gray">Lines of Code: ............................................... 33,701 ( </text>
-<text x="626.8000000000001" y="1063" class="green">+48,095</text>
+<text x="400" y="1043" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 161</text>
+<text x="22.0" y="1063" class="gray">Lines of Code: .............................................. 58,685 ( </text>
+<text x="618.4" y="1063" class="green">+106,166</text>
 <text x="685.6" y="1063" class="gray">, </text>
-<text x="702.4" y="1063" class="red">-14,394</text>
+<text x="702.4" y="1063" class="red">-47,481</text>
 <text x="761.1999999999999" y="1063" class="gray"> )</text>
 <text x="400" y="1093" text-anchor="middle" class="gray">// TODO: write great footer</text>
-<text x="400" y="1123" text-anchor="middle" class="gray">Last Updated: 2026-01-31</text>
+<text x="400" y="1123" text-anchor="middle" class="gray">Last Updated: 2026-02-01</text>
 </svg>
