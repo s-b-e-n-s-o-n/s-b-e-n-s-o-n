@@ -11,7 +11,7 @@ from datetime import datetime
 from pathlib import Path
 
 # Import stats functions from preview
-from preview import get_claude_stats, get_github_stats, format_number
+from preview import get_claude_stats, get_github_stats, format_number, save_stats_cache
 
 
 def escape_xml(s):
@@ -19,12 +19,14 @@ def escape_xml(s):
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
 
 
-def generate_svg(mode="dark"):
+def generate_svg(mode="dark", claude=None, github=None):
     """Generate SVG content for the given color mode."""
 
-    # Get stats
-    claude = get_claude_stats()
-    github = get_github_stats()
+    # Get stats (use provided or fetch fresh)
+    if claude is None:
+        claude = get_claude_stats()
+    if github is None:
+        github = get_github_stats()
 
     # Color schemes
     if mode == "dark":
@@ -299,15 +301,22 @@ def main():
     """Generate both dark and light mode SVGs."""
     script_dir = Path(__file__).parent
 
+    # Fetch stats once and reuse for both SVGs
+    claude = get_claude_stats()
+    github = get_github_stats()
+
+    # Save cache so CI commits fresh values
+    save_stats_cache(claude, github)
+
     # Generate dark mode
-    dark_svg = generate_svg("dark")
+    dark_svg = generate_svg("dark", claude=claude, github=github)
     dark_path = script_dir / "dark_mode.svg"
     with open(dark_path, 'w', encoding='utf-8') as f:
         f.write(dark_svg)
     print(f"Generated: {dark_path}")
 
     # Generate light mode
-    light_svg = generate_svg("light")
+    light_svg = generate_svg("light", claude=claude, github=github)
     light_path = script_dir / "light_mode.svg"
     with open(light_path, 'w', encoding='utf-8') as f:
         f.write(light_svg)

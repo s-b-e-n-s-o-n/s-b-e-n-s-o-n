@@ -38,6 +38,48 @@ class Colors:
     BG_BLACK = "\033[40m"
 
 
+def _load_stats_cache():
+    """Load the stats cache file, returning the parsed dict or None."""
+    cache_file = Path(__file__).parent / "cache" / "stats.json"
+    if cache_file.exists():
+        try:
+            with open(cache_file) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, KeyError):
+            pass
+    return None
+
+
+def merge_with_cache(live_stats, cached_stats, stat_type):
+    """Merge live stats with cached stats using max() for cumulative values.
+
+    Cumulative stats should only go up. This protects against session pruning
+    (Claude) and inconsistent API responses (GitHub LOC).
+
+    stat_type: 'claude' or 'github'
+    """
+    if not cached_stats:
+        return live_stats
+
+    merged = dict(live_stats)
+
+    if stat_type == 'claude':
+        # All Claude stats are cumulative — use max for every numeric field
+        for key in ('sessions', 'messages', 'input_tokens', 'output_tokens',
+                     'cache_creation', 'cache_read', 'total_tokens', 'cost_estimate'):
+            if key in cached_stats:
+                merged[key] = max(merged.get(key, 0), cached_stats[key])
+    elif stat_type == 'github':
+        # Cumulative fields — use max to protect against partial API responses
+        for key in ('commits', 'prs', 'issues', 'contributed_repos',
+                     'loc_added', 'loc_deleted', 'loc_total'):
+            if key in cached_stats:
+                merged[key] = max(merged.get(key, 0), cached_stats[key])
+        # repos, stars, followers, following use live values (can legitimately decrease)
+
+    return merged
+
+
 def get_claude_stats():
     """Parse Claude Code JSONL files to get token usage."""
     claude_dir = Path.home() / ".claude" / "projects"
@@ -71,16 +113,15 @@ def get_claude_stats():
                 continue
 
     # If no local data found, try to load from cache (for GitHub Actions)
+    cached = _load_stats_cache()
     if session_count == 0:
-        cache_file = Path(__file__).parent / "cache" / "stats.json"
-        if cache_file.exists():
-            try:
-                with open(cache_file) as f:
-                    cached = json.load(f)
-                    if 'claude' in cached:
-                        return cached['claude']
-            except (json.JSONDecodeError, KeyError):
-                pass
+        if cached and 'claude' in cached:
+            return cached['claude']
+        return {
+            'input_tokens': 0, 'output_tokens': 0, 'cache_creation': 0,
+            'cache_read': 0, 'total_tokens': 0, 'sessions': 0,
+            'messages': 0, 'cost_estimate': 0,
+        }
 
     # Cost estimate using Claude pricing
     # Sonnet: $3/MTok input, $15/MTok output
@@ -91,7 +132,7 @@ def get_claude_stats():
     cache_read_cost = total_cache_read * 1 / 1_000_000  # 90% discount
     cost_estimate = input_cost + output_cost + cache_read_cost
 
-    return {
+    live_stats = {
         'input_tokens': total_input,
         'output_tokens': total_output,
         'cache_creation': total_cache_creation,
@@ -101,6 +142,9 @@ def get_claude_stats():
         'messages': message_count,
         'cost_estimate': cost_estimate
     }
+
+    # Merge with cache — cumulative stats should only go up
+    return merge_with_cache(live_stats, cached.get('claude') if cached else None, 'claude')
 
 
 def run_gh_api(endpoint, method="GET"):
@@ -342,7 +386,7 @@ def get_github_stats(username="s-b-e-n-s-o-n"):
     # Get LOC stats (separate API calls)
     loc_stats = get_loc_stats(username)
 
-    return {
+    live_stats = {
         'repos': repos['totalCount'],
         'commits': total_commits,
         'stars': total_stars,
@@ -355,6 +399,10 @@ def get_github_stats(username="s-b-e-n-s-o-n"):
         'loc_deleted': loc_stats['loc_deleted'],
         'loc_total': loc_stats['loc_total'],
     }
+
+    # Merge with cache — cumulative stats should only go up
+    cached = _load_stats_cache()
+    return merge_with_cache(live_stats, cached.get('github') if cached else None, 'github')
 
 
 def save_stats_cache(claude_stats, github_stats):
