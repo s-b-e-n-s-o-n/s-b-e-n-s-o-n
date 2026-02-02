@@ -74,7 +74,7 @@ text {
 <text x="400" y="785" text-anchor="middle" class="magenta">▄▀▀  ▓   ▄▀▀▄ ▓  ▄ ▄▀▀▄ ▄▀▀    ▄▀▀  ▄▀▀▄ ▄▀▀▄ ▄▀▀ </text>
 <text x="400" y="798" text-anchor="middle" class="magenta">█    █   █▀▀▓ █  ▓ █  ▓ ▓▀     █    █  ▓ █  ▓ ▓▀  </text>
 <text x="400" y="811" text-anchor="middle" class="magenta"> ▀▀  ▀▀▀ ▀    ▀▀▀▀ ▀▀▀▀ ▀▀▀     ▀▀   ▀▀  ▀▀▀▀ ▀▀▀ </text>
-<text x="400" y="834" text-anchor="middle" class="gray">Sessions: ........................................................................... 3.8K</text>
+<text x="400" y="834" text-anchor="middle" class="gray">Sessions: ........................................................................... 3.9K</text>
 <text x="400" y="854" text-anchor="middle" class="gray">Messages: ......................................................................... 137.5K</text>
 <text x="400" y="874" text-anchor="middle" class="gray">Total Tokens: ...................................................................... 12.3B</text>
 <text x="400" y="894" text-anchor="middle" class="gray">Est. API Cost Saved: ............................................................. $22,293</text>
@@ -83,8 +83,8 @@ text {
 <text x="400" y="960" text-anchor="middle" class="green"> ▀▀  ▀  ▀   ▀  ▀ ▀▀▀▀ ▀▀▀   ▀▀▀   ▀   ▀  ▀  ▀   ▀▀▀ </text>
 <text x="400" y="983" text-anchor="middle" class="gray">Repositories: ......................................................................... 25</text>
 <text x="400" y="1003" text-anchor="middle" class="gray">Contributed To: ....................................................................... 33</text>
-<text x="400" y="1023" text-anchor="middle" class="gray">Total Commits: ...................................................................... 4046</text>
-<text x="400" y="1043" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 170</text>
+<text x="400" y="1023" text-anchor="middle" class="gray">Total Commits: ...................................................................... 4066</text>
+<text x="400" y="1043" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 173</text>
 <text x="22.0" y="1063" class="gray">Lines of Code: .............................................. 67,901 ( </text>
 <text x="618.4" y="1063" class="green">+138,401</text>
 <text x="685.6" y="1063" class="gray">, </text>
