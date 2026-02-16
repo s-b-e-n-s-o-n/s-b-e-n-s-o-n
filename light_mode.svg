@@ -58,15 +58,15 @@ text {
 <text x="400" y="790" text-anchor="middle" class="gray">Total Tokens: ...................................................................... 12.3B</text>
 <text x="400" y="810" text-anchor="middle" class="gray">Est. API Cost Saved: ............................................................. $22,293</text>
 <text x="400" y="850" text-anchor="middle" class="green">-------------------------------------- GITHUB STATS --------------------------------------</text>
-<text x="400" y="880" text-anchor="middle" class="gray">Repositories: ......................................................................... 28</text>
-<text x="400" y="900" text-anchor="middle" class="gray">Contributed To: ....................................................................... 38</text>
-<text x="400" y="920" text-anchor="middle" class="gray">Total Commits: ...................................................................... 4904</text>
-<text x="400" y="940" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 280</text>
+<text x="400" y="880" text-anchor="middle" class="gray">Repositories: ......................................................................... 30</text>
+<text x="400" y="900" text-anchor="middle" class="gray">Contributed To: ....................................................................... 39</text>
+<text x="400" y="920" text-anchor="middle" class="gray">Total Commits: ...................................................................... 4992</text>
+<text x="400" y="940" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 294</text>
 <text x="22.0" y="960" class="gray">Lines of Code: .............................................. 70,706 ( </text>
 <text x="618.4" y="960" class="green">+153,368</text>
 <text x="685.6" y="960" class="gray">, </text>
 <text x="702.4" y="960" class="red">-82,662</text>
 <text x="761.1999999999999" y="960" class="gray"> )</text>
 <text x="400" y="990" text-anchor="middle" class="gray">// TODO: write great footer</text>
-<text x="400" y="1020" text-anchor="middle" class="gray">Last Updated: 2026-02-15</text>
+<text x="400" y="1020" text-anchor="middle" class="gray">Last Updated: 2026-02-16</text>
 </svg>
