@@ -498,7 +498,7 @@ def render_nfo(fetch_github=False):
         output.append(line(l, "center"))
 
     output.append(line())
-    output.append(line(f"{c.CYAN}ai developer  ·  ai whisperer  ·  token burner{c.RESET}", "center"))
+    output.append(line(f"{c.CYAN}ai developer  ·  ai whisperer{c.RESET}", "center"))
     output.append(line())
 
     # Section separator with warez-style header
@@ -574,7 +574,7 @@ def render_nfo(fetch_github=False):
     # Footer with warez greet
     output.append(sep)
     output.append(line())
-    output.append(line(f"{c.GRAY}\" greetz to all the ai pioneers and token burners out there \"{c.RESET}", "center"))
+    output.append(line(f"{c.GRAY}\" greetz to all the ai pioneers out there \"{c.RESET}", "center"))
     output.append(line())
     output.append(line(f"{c.DIM}Last Updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}{c.RESET}", "center"))
     output.append(line())

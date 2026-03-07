@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1090" viewBox="0 0 800 1090">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1094" viewBox="0 0 800 1094">
 <style>
 @font-face {
     src: local('Consolas'), local('Monaco'), local('Menlo');
@@ -20,54 +20,65 @@ text {
 .orange { fill: #ea580c; }
 .yellow { fill: #d97706; }
 </style>
-<rect width="800" height="1090" fill="#f6f8fa" rx="10"/>
-<text x="400" y="30" text-anchor="middle" class="yellow">                                           *******************                            </text>
-<text x="400" y="50" text-anchor="middle" class="yellow">                                     ************+++************                          </text>
-<text x="400" y="70" text-anchor="middle" class="yellow">                                 *******+++++:::::::::+++++*******                        </text>
-<text x="400" y="90" text-anchor="middle" class="yellow">                              ******+++::::...........::::+++******                       </text>
-<text x="400" y="110" text-anchor="middle" class="yellow">                           *****+++:::...................:::+++*****                      </text>
-<text x="400" y="130" text-anchor="middle" class="yellow">                         ****+++::.........................::+++****                      </text>
-<text x="400" y="150" text-anchor="middle" class="yellow">                        ****++::.............................::++****                     </text>
-<text x="400" y="170" text-anchor="middle" class="yellow">                      ****++::.......ooo...........ooo.......::++****                     </text>
-<text x="400" y="190" text-anchor="middle" class="yellow">                     ****++::......o@@@@@o.......o@@@@@o......::++****                    </text>
-<text x="400" y="210" text-anchor="middle" class="yellow">                   ****++::......o@@@@@@@o.....o@@@@@@@o......::++****                    </text>
-<text x="400" y="230" text-anchor="middle" class="yellow">                   ****+::........o@@@@@o.......o@@@@@o........::+****                    </text>
-<text x="400" y="250" text-anchor="middle" class="yellow">                   ****+::..........ooo...........ooo..........::+****                    </text>
-<text x="400" y="270" text-anchor="middle" class="yellow">                   ***++::.....................................::++***                    </text>
-<text x="400" y="290" text-anchor="middle" class="yellow">                   ****+::.......**...................**.......::+****                    </text>
-<text x="400" y="310" text-anchor="middle" class="yellow">                   ****+::.........***.............***.........::+****                    </text>
-<text x="400" y="330" text-anchor="middle" class="yellow">                   ****++::...........****.....****...........::++****                    </text>
-<text x="400" y="350" text-anchor="middle" class="yellow">                     ****++::..............*****..............::++****                    </text>
-<text x="400" y="370" text-anchor="middle" class="yellow">                      ****++::...............................::++****                     </text>
-<text x="400" y="390" text-anchor="middle" class="yellow">                        ****++::.............................::++****                     </text>
-<text x="400" y="410" text-anchor="middle" class="yellow">                         ****+++::.........................::+++****                      </text>
-<text x="400" y="430" text-anchor="middle" class="yellow">                           *****+++:::...................:::+++*****                      </text>
-<text x="400" y="450" text-anchor="middle" class="yellow">                              ******+++::::...........::::+++******                       </text>
-<text x="400" y="470" text-anchor="middle" class="yellow">                                 *******+++++:::::::::+++++*******                        </text>
-<text x="400" y="490" text-anchor="middle" class="yellow">                                     ************+++************                          </text>
-<text x="400" y="510" text-anchor="middle" class="yellow">                                           *******************                            </text>
-<text x="400" y="550" text-anchor="middle" class="gray">ai developer  ·  prompt whisperer  ·  token burner</text>
-<text x="400" y="590" text-anchor="middle" class="orange">-------------------------------------- SYSTEM INFO ---------------------------------------</text>
-<text x="400" y="620" text-anchor="middle" class="gray">Location: ........................................................................ NYC, NY</text>
-<text x="400" y="640" text-anchor="middle" class="gray">Shell: ............................................. living tissue over metal endoskeleton</text>
-<text x="400" y="660" text-anchor="middle" class="gray">Languages: .............................................. english, bad english, help files</text>
-<text x="400" y="680" text-anchor="middle" class="gray">Focus: .................................................... AI/ML, Developer Tools, waning</text>
-<text x="400" y="720" text-anchor="middle" class="magenta">-------------------------------------- CLAUDE CODE ---------------------------------------</text>
-<text x="400" y="750" text-anchor="middle" class="gray">Sessions: ........................................................................... 7.8K</text>
-<text x="400" y="770" text-anchor="middle" class="gray">Messages: ......................................................................... 263.8K</text>
-<text x="400" y="790" text-anchor="middle" class="gray">Total Tokens: ...................................................................... 20.7B</text>
-<text x="400" y="810" text-anchor="middle" class="gray">Est. API Cost Saved: ............................................................. $33,846</text>
-<text x="400" y="850" text-anchor="middle" class="green">-------------------------------------- GITHUB STATS --------------------------------------</text>
-<text x="400" y="880" text-anchor="middle" class="gray">Repositories: ........................................................................ 219</text>
-<text x="400" y="900" text-anchor="middle" class="gray">Contributed To: ....................................................................... 46</text>
-<text x="400" y="920" text-anchor="middle" class="gray">Total Commits: ...................................................................... 6967</text>
-<text x="400" y="940" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 396</text>
-<text x="400" y="960" text-anchor="middle" class="gray">Stars Earned: ........................................................................ 111</text>
-<text x="22.0" y="980" class="gray">Lines of Code: ..................................... 7,360,005 ( </text>
-<text x="568.0" y="980" class="green">+15,449,601</text>
-<text x="660.4" y="980" class="gray">, </text>
-<text x="677.1999999999999" y="980" class="red">-8,089,596</text>
-<text x="761.1999999999999" y="980" class="gray"> )</text>
-<text x="400" y="1010" text-anchor="middle" class="gray">// TODO: write great footer</text>
-<text x="400" y="1040" text-anchor="middle" class="gray">Last Updated: 2026-03-07</text>
+<rect width="800" height="1094" fill="#f6f8fa" rx="10"/>
+<text x="400" y="30" text-anchor="middle" class="yellow">                         ####################                         </text>
+<text x="400" y="44" text-anchor="middle" class="yellow">                     #########+++++++++++#########                    </text>
+<text x="400" y="58" text-anchor="middle" class="yellow">                #######++--..............----++#######                </text>
+<text x="400" y="72" text-anchor="middle" class="yellow">              ######+--.......................--++#######             </text>
+<text x="400" y="86" text-anchor="middle" class="yellow">            #####+---............................--++######           </text>
+<text x="400" y="100" text-anchor="middle" class="yellow">          #####+--...............................-----+######         </text>
+<text x="400" y="114" text-anchor="middle" class="yellow">        #####+-..................................-------+#####        </text>
+<text x="400" y="128" text-anchor="middle" class="yellow">       #####+........................................-----+#####      </text>
+<text x="400" y="142" text-anchor="middle" class="yellow">     ++###+-......................................-....----+#####     </text>
+<text x="400" y="156" text-anchor="middle" class="yellow">     ####+............................................-------+###     </text>
+<text x="400" y="170" text-anchor="middle" class="yellow">     ###+-........--........-+....................--....------####    </text>
+<text x="400" y="184" text-anchor="middle" class="yellow">    ###+-........+###+-..-+###+-..............--++#++...------+##++  </text>
+<text x="400" y="198" text-anchor="middle" class="yellow">    ###-..........-+###++####+............--+#######+-..-------+#### </text>
+<text x="400" y="212" text-anchor="middle" class="yellow">   ###+-............-+#####+-..........-+######++--....-.------+##++ </text>
+<text x="400" y="226" text-anchor="middle" class="yellow">  ++##-.............-+#####+-.........+########+-.....----------+### </text>
+<text x="400" y="240" text-anchor="middle" class="yellow">  ####-...........-+###++####+..........---+######--.----.-.----+### </text>
+<text x="400" y="254" text-anchor="middle" class="yellow">  ###+-..........-###+-..-+###+-.............----+++-.-----.--.-+### </text>
+<text x="400" y="268" text-anchor="middle" class="yellow">  ###--...........--.......-++......................-.----------+### </text>
+<text x="400" y="282" text-anchor="middle" class="yellow">  ###+-...........................................+##+----------+### </text>
+<text x="400" y="296" text-anchor="middle" class="yellow">  ###+-......--+##+-..............................-+####+---.---+### </text>
+<text x="400" y="310" text-anchor="middle" class="yellow">  ####+--...-+#####--..........................--+######+------++### </text>
+<text x="400" y="324" text-anchor="middle" class="yellow">  ++##+----..---+###+--.....................--+######+--------++#### </text>
+<text x="400" y="338" text-anchor="middle" class="yellow">  ++###++-......-++####+---.............---+#########+--------++##++ </text>
+<text x="400" y="352" text-anchor="middle" class="yellow">    -+##+--..-.....--#######+##+++#+#############+-+###+------+##++ </text>
+<text x="400" y="366" text-anchor="middle" class="yellow">    -+###+------......++#################++++++###+--+##+---++##### </text>
+<text x="400" y="380" text-anchor="middle" class="yellow">     #+##+----..-........---++++##########------+#++--+##++-+####   </text>
+<text x="400" y="394" text-anchor="middle" class="yellow">     --###++----....................----+###------+++++###+####++    </text>
+<text x="400" y="408" text-anchor="middle" class="yellow">       -+###++-----..-...............--.--+##++--++++#########++    </text>
+<text x="400" y="422" text-anchor="middle" class="yellow">        +++##++------.--.-..-..---..-------+####+++#########++     </text>
+<text x="400" y="436" text-anchor="middle" class="yellow">          ++###++---------------------------+###############       </text>
+<text x="400" y="450" text-anchor="middle" class="yellow">           +++###++--------------------------+++############       </text>
+<text x="400" y="464" text-anchor="middle" class="yellow">             +++###+++-+----------------+-+++++++#######+#         </text>
+<text x="400" y="478" text-anchor="middle" class="yellow">               -++######++++++-------+--+-++++########++           </text>
+<text x="400" y="492" text-anchor="middle" class="yellow">                 -+##+#######+++++++++++++###########               </text>
+<text x="400" y="506" text-anchor="middle" class="yellow">                       --+########################                 </text>
+<text x="400" y="520" text-anchor="middle" class="yellow">                           +++##########++                         </text>
+<text x="400" y="554" text-anchor="middle" class="gray">ai developer  ·  prompt whisperer</text>
+<text x="400" y="594" text-anchor="middle" class="orange">-------------------------------------- SYSTEM INFO ---------------------------------------</text>
+<text x="400" y="624" text-anchor="middle" class="gray">Location: ........................................................................ NYC, NY</text>
+<text x="400" y="644" text-anchor="middle" class="gray">Shell: ............................................. living tissue over metal endoskeleton</text>
+<text x="400" y="664" text-anchor="middle" class="gray">Languages: .............................................. english, bad english, help files</text>
+<text x="400" y="684" text-anchor="middle" class="gray">Focus: .................................................... AI/ML, Developer Tools, waning</text>
+<text x="400" y="724" text-anchor="middle" class="magenta">-------------------------------------- CLAUDE CODE ---------------------------------------</text>
+<text x="400" y="754" text-anchor="middle" class="gray">Sessions: ........................................................................... 7.8K</text>
+<text x="400" y="774" text-anchor="middle" class="gray">Messages: ......................................................................... 263.8K</text>
+<text x="400" y="794" text-anchor="middle" class="gray">Total Tokens: ...................................................................... 20.7B</text>
+<text x="400" y="814" text-anchor="middle" class="gray">Est. API Cost Saved: ............................................................. $33,846</text>
+<text x="400" y="854" text-anchor="middle" class="green">-------------------------------------- GITHUB STATS --------------------------------------</text>
+<text x="400" y="884" text-anchor="middle" class="gray">Repositories: ........................................................................ 219</text>
+<text x="400" y="904" text-anchor="middle" class="gray">Contributed To: ....................................................................... 46</text>
+<text x="400" y="924" text-anchor="middle" class="gray">Total Commits: ...................................................................... 6967</text>
+<text x="400" y="944" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 396</text>
+<text x="400" y="964" text-anchor="middle" class="gray">Stars Earned: ........................................................................ 111</text>
+<text x="22.0" y="984" class="gray">Lines of Code: ..................................... 7,360,005 ( </text>
+<text x="568.0" y="984" class="green">+15,449,601</text>
+<text x="660.4" y="984" class="gray">, </text>
+<text x="677.1999999999999" y="984" class="red">-8,089,596</text>
+<text x="761.1999999999999" y="984" class="gray"> )</text>
+<text x="400" y="1014" text-anchor="middle" class="gray">// TODO: write great footer</text>
+<text x="400" y="1044" text-anchor="middle" class="gray">Last Updated: 2026-03-07</text>
 </svg>
