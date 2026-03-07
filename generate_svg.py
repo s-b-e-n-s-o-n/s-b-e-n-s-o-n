@@ -151,6 +151,7 @@ def generate_svg(mode="dark", claude=None, github=None):
         ("Contributed To", github.get('contributed_repos', 0)),
         ("Total Commits", github.get('commits', 0)),
         ("Pull Requests", github.get('prs', 0)),
+        ("Stars Earned", github.get('stars', 0)),
     ]:
         lines.append((stat_line(key, val), "gray", "normal"))
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1070" viewBox="0 0 800 1070">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1090" viewBox="0 0 800 1090">
 <style>
 @font-face {
     src: local('Consolas'), local('Monaco'), local('Menlo');
@@ -20,7 +20,7 @@ text {
 .orange { fill: #ea580c; }
 .yellow { fill: #d97706; }
 </style>
-<rect width="800" height="1070" fill="#f6f8fa" rx="10"/>
+<rect width="800" height="1090" fill="#f6f8fa" rx="10"/>
 <text x="400" y="30" text-anchor="middle" class="yellow">                                           *******************                            </text>
 <text x="400" y="50" text-anchor="middle" class="yellow">                                     ************+++************                          </text>
 <text x="400" y="70" text-anchor="middle" class="yellow">                                 *******+++++:::::::::+++++*******                        </text>
@@ -53,20 +53,21 @@ text {
 <text x="400" y="660" text-anchor="middle" class="gray">Languages: .............................................. english, bad english, help files</text>
 <text x="400" y="680" text-anchor="middle" class="gray">Focus: .................................................... AI/ML, Developer Tools, waning</text>
 <text x="400" y="720" text-anchor="middle" class="magenta">-------------------------------------- CLAUDE CODE ---------------------------------------</text>
-<text x="400" y="750" text-anchor="middle" class="gray">Sessions: ........................................................................... 4.1K</text>
-<text x="400" y="770" text-anchor="middle" class="gray">Messages: ......................................................................... 141.8K</text>
-<text x="400" y="790" text-anchor="middle" class="gray">Total Tokens: ...................................................................... 12.3B</text>
-<text x="400" y="810" text-anchor="middle" class="gray">Est. API Cost Saved: ............................................................. $22,293</text>
+<text x="400" y="750" text-anchor="middle" class="gray">Sessions: ........................................................................... 7.8K</text>
+<text x="400" y="770" text-anchor="middle" class="gray">Messages: ......................................................................... 263.8K</text>
+<text x="400" y="790" text-anchor="middle" class="gray">Total Tokens: ...................................................................... 20.7B</text>
+<text x="400" y="810" text-anchor="middle" class="gray">Est. API Cost Saved: ............................................................. $33,846</text>
 <text x="400" y="850" text-anchor="middle" class="green">-------------------------------------- GITHUB STATS --------------------------------------</text>
-<text x="400" y="880" text-anchor="middle" class="gray">Repositories: ......................................................................... 32</text>
-<text x="400" y="900" text-anchor="middle" class="gray">Contributed To: ....................................................................... 45</text>
-<text x="400" y="920" text-anchor="middle" class="gray">Total Commits: ...................................................................... 5876</text>
-<text x="400" y="940" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 390</text>
-<text x="22.0" y="960" class="gray">Lines of Code: .............................................. 70,706 ( </text>
-<text x="618.4" y="960" class="green">+153,368</text>
-<text x="685.6" y="960" class="gray">, </text>
-<text x="702.4" y="960" class="red">-82,662</text>
-<text x="761.1999999999999" y="960" class="gray"> )</text>
-<text x="400" y="990" text-anchor="middle" class="gray">// TODO: write great footer</text>
-<text x="400" y="1020" text-anchor="middle" class="gray">Last Updated: 2026-03-07</text>
+<text x="400" y="880" text-anchor="middle" class="gray">Repositories: ........................................................................ 219</text>
+<text x="400" y="900" text-anchor="middle" class="gray">Contributed To: ....................................................................... 46</text>
+<text x="400" y="920" text-anchor="middle" class="gray">Total Commits: ...................................................................... 6967</text>
+<text x="400" y="940" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 396</text>
+<text x="400" y="960" text-anchor="middle" class="gray">Stars Earned: ........................................................................ 111</text>
+<text x="22.0" y="980" class="gray">Lines of Code: ..................................... 7,360,005 ( </text>
+<text x="568.0" y="980" class="green">+15,449,601</text>
+<text x="660.4" y="980" class="gray">, </text>
+<text x="677.1999999999999" y="980" class="red">-8,089,596</text>
+<text x="761.1999999999999" y="980" class="gray"> )</text>
+<text x="400" y="1010" text-anchor="middle" class="gray">// TODO: write great footer</text>
+<text x="400" y="1040" text-anchor="middle" class="gray">Last Updated: 2026-03-07</text>
 </svg>

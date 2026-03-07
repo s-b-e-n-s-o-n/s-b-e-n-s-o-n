@@ -177,7 +177,25 @@ def run_gh_graphql(query, variables=None):
     return None
 
 
-def get_loc_stats(username="s-b-e-n-s-o-n"):
+def get_all_repos(username="s-b-e-n-s-o-n"):
+    """Get all repos (owned, collaborated, org member) with pagination."""
+    all_repos = []
+    page = 1
+    while True:
+        repos = run_gh_api(
+            f'user/repos?per_page=100&page={page}'
+            f'&affiliation=owner,collaborator,organization_member'
+        )
+        if not repos or not isinstance(repos, list) or len(repos) == 0:
+            break
+        all_repos.extend(repos)
+        if len(repos) < 100:
+            break
+        page += 1
+    return all_repos
+
+
+def get_loc_stats(repos, username="s-b-e-n-s-o-n"):
     """Fetch lines of code stats by iterating through repos using gh CLI."""
     import time
 
@@ -185,20 +203,15 @@ def get_loc_stats(username="s-b-e-n-s-o-n"):
     total_deleted = 0
 
     try:
-        # Get user's repos using gh CLI
-        repos = run_gh_api('user/repos?per_page=100&affiliation=owner')
-        if not repos or not isinstance(repos, list):
-            return {'loc_added': 0, 'loc_deleted': 0, 'loc_total': 0}
-
-        # For each repo, get contributor stats
         for repo in repos:
             if repo.get('fork'):
                 continue  # Skip forks
+            owner = repo['owner']['login']
             repo_name = repo['name']
 
             # Retry up to 3 times (GitHub computes stats on first request)
             for attempt in range(3):
-                contributors = run_gh_api(f'repos/{username}/{repo_name}/stats/contributors')
+                contributors = run_gh_api(f'repos/{owner}/{repo_name}/stats/contributors')
                 if contributors is None:
                     time.sleep(1)
                     continue
@@ -225,32 +238,9 @@ def get_loc_stats(username="s-b-e-n-s-o-n"):
     }
 
 
-def get_all_commits(username="s-b-e-n-s-o-n"):
+def get_all_commits(repos, username="s-b-e-n-s-o-n"):
     """Get total commits across all repos using gh CLI."""
     total_commits = 0
-
-    # Get all repos (owned, collaborated, org member)
-    query = """
-    query($login: String!) {
-        user(login: $login) {
-            repositories(first: 100, ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER]) {
-                nodes {
-                    name
-                    owner { login }
-                    defaultBranchRef {
-                        target {
-                            ... on Commit {
-                                history(first: 0, author: {id: null}) {
-                                    totalCount
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    """
 
     # First get the user's node ID for filtering commits
     id_query = "query($login: String!) { user(login: $login) { id } }"
@@ -276,12 +266,7 @@ def get_all_commits(username="s-b-e-n-s-o-n"):
     }
     """
 
-    # Get list of repos
-    repos_data = run_gh_api('user/repos?per_page=100&affiliation=owner,collaborator,organization_member')
-    if not repos_data:
-        return 0
-
-    for repo in repos_data:
+    for repo in repos:
         owner = repo['owner']['login']
         name = repo['name']
 
@@ -327,16 +312,10 @@ def get_github_stats(username="s-b-e-n-s-o-n"):
             'issues': 0,
         }
 
-    # GraphQL query to get comprehensive stats
+    # GraphQL query for user-level stats (not repo-dependent)
     query = """
     query($login: String!) {
         user(login: $login) {
-            repositories(first: 100, ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER]) {
-                totalCount
-                nodes {
-                    stargazerCount
-                }
-            }
             followers {
                 totalCount
             }
@@ -367,27 +346,25 @@ def get_github_stats(username="s-b-e-n-s-o-n"):
                 'loc_added': 0, 'loc_deleted': 0, 'contributed_repos': 0, 'prs': 0, 'issues': 0}
 
     user = data['data']['user']
-    repos = user['repositories']
 
-    # Calculate total stars
-    total_stars = sum(
-        node['stargazerCount']
-        for node in repos['nodes']
-        if node
-    )
+    # Fetch all repos with pagination (shared across commits/LOC/stars)
+    all_repos = get_all_repos(username)
+
+    # Calculate total stars from all repos
+    total_stars = sum(repo.get('stargazers_count', 0) for repo in all_repos)
 
     # Get ALL commits across all repos (not just contribution graph)
-    total_commits = get_all_commits(username)
+    total_commits = get_all_commits(all_repos, username)
 
     # Get PRs and issues from user totals
     total_prs = user['pullRequests']['totalCount']
     total_issues = user['issues']['totalCount']
 
-    # Get LOC stats (separate API calls)
-    loc_stats = get_loc_stats(username)
+    # Get LOC stats (separate API calls, uses same repo list)
+    loc_stats = get_loc_stats(all_repos, username)
 
     live_stats = {
-        'repos': repos['totalCount'],
+        'repos': len(all_repos),
         'commits': total_commits,
         'stars': total_stars,
         'followers': user['followers']['totalCount'],

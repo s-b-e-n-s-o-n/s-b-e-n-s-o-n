@@ -1,9 +1,6 @@
 name: Update Profile Stats
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     # Run daily at midnight UTC
     - cron: '0 0 * * *'
@@ -40,4 +37,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git add dark_mode.svg light_mode.svg cache/
           git diff --staged --quiet || git commit -m "Update profile stats"
+          git pull --rebase origin main
           git push
