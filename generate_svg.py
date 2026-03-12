@@ -39,6 +39,7 @@ def generate_svg(mode="dark", claude=None, github=None):
             'red': '#f87171',
             'orange': '#fb923c',
             'yellow': '#fbbf24',
+            'redact': '#c9d1d9',
         }
     else:
         colors = {
@@ -50,6 +51,7 @@ def generate_svg(mode="dark", claude=None, github=None):
             'red': '#dc2626',
             'orange': '#ea580c',
             'yellow': '#d97706',
+            'redact': '#1f2328',
         }
 
     c = colors
@@ -66,6 +68,11 @@ def generate_svg(mode="dark", claude=None, github=None):
         val_str = str(value)
         dots = '.' * (content_width - len(key_str) - len(val_str) - 2)
         return f"{key_str} {dots} {val_str}"
+
+    # Project line formatter (name + dots + description)
+    def project_line(name, desc):
+        dots = '.' * (content_width - len(name) - len(desc) - 2)
+        return f"{name} {dots} {desc}"
 
     # Build content lines with spacing type
     # Each entry: (line_text, color, spacing_type)
@@ -162,9 +169,13 @@ def generate_svg(mode="dark", claude=None, github=None):
         ("Contributed To", github.get('contributed_repos', 0)),
         ("Total Commits", github.get('commits', 0)),
         ("Pull Requests", github.get('prs', 0)),
-        ("Stars Earned", github.get('stars', 0)),
     ]:
         lines.append((stat_line(key, val), "gray", "normal"))
+
+    # Stars line - special formatting with star unicode
+    stars_count = github.get('stars', 0)
+    stars_value = f"{stars_count} ★"
+    lines.append((f"__STARS__{stars_value}__", "stars", "normal"))
 
     # LOC line - special formatting with dots
     loc_total = github.get('loc_total', 0)
@@ -174,11 +185,51 @@ def generate_svg(mode="dark", claude=None, github=None):
     lines.append((f"__LOC__{loc_value}__", "loc", "normal"))
 
     lines.append(("", "text", "blank"))
-
-    # Footer
-    lines.append(("// TODO: write great footer", "gray", "normal"))
     lines.append(("", "text", "blank"))
-    lines.append((f"Last Updated: {datetime.now().strftime('%Y-%m-%d')}", "gray", "normal"))
+
+    # Projects header
+    lines.append(("--------------------------------------- PROJECTS ----------------------------------------", "text", "normal"))
+
+    lines.append(("", "text", "blank"))
+
+    # Area 51 - classified/obfuscated projects
+    redact = "████████"
+    lines.append((f"[ AREA 51 ] ............................................................. just trust me", "orange", "normal"))
+
+    lines.append(("", "text", "blank"))
+
+    area51_projects = [
+        ("Nexus", f"Enterprise API platform connecting {redact} systems at scale"),
+        ("Origami", f"AI-powered {redact} app, concept to launch"),
+        ("Foundry", f"AI app builder for rapid {redact} prototyping"),
+        ("Beacon", f"Intelligence platform surfacing {redact} insights"),
+        ("Meridian", f"Client relationship dashboard for {redact}"),
+        ("Exodus", f"Large-scale {redact} migration across platforms"),
+    ]
+    for name, desc in area51_projects:
+        lines.append((project_line(name, desc), "project_redact", "normal"))
+
+    lines.append(("", "text", "blank"))
+    lines.append(("", "text", "blank"))
+
+    # Public - open source projects
+    lines.append(("[ PUBLIC ] ............................................................... open source", "green", "normal"))
+
+    lines.append(("", "text", "blank"))
+
+    lines.append((project_line("Dry Dock", "Container update monitoring · 23 registries"), "gray", "normal"))
+    lines.append(("  github.com/CodesWhat/drydock", "text", "normal"))
+
+    lines.append(("", "text", "blank"))
+
+    lines.append((project_line("Portkey Admin MCP", "Full Portkey Admin API MCP server"), "gray", "normal"))
+    lines.append(("  github.com/s-b-e-n-s-o-n/portkey-admin-mcp", "text", "normal"))
+
+    lines.append(("", "text", "blank"))
+
+    # Date stamp rendered separately in top-right corner
+    now = datetime.now()
+    date_stamp = f"{now.month}/{now.day}/{now.strftime('%y')}"
 
     # Calculate height based on variable line heights
     total_height = y_start
@@ -213,8 +264,10 @@ text {{
 .red {{ fill: {c['red']}; }}
 .orange {{ fill: {c['orange']}; }}
 .yellow {{ fill: {c['yellow']}; }}
+.redact {{ fill: {c['redact']}; }}
 </style>
 <rect width="{width}" height="{height}" fill="{c['bg']}" rx="10"/>
+<text x="{width - 15}" y="12" text-anchor="end" class="gray" font-size="11">{date_stamp}</text>
 '''
 
     # Add centered lines with variable spacing
@@ -263,6 +316,42 @@ text {{
                 svg += f'<text x="{suffix_x}" y="{y}" class="gray"> )</text>\n'
             else:
                 svg += f'<text x="{width // 2}" y="{y}" text-anchor="middle" class="gray">{key_str} {dots} {loc_value}</text>\n'
+        elif line.startswith('__STARS__'):
+            # Extract the value part: "120 ★"
+            stars_value = line.replace('__STARS__', '').replace('__', '')
+            key_str = "Stars Earned:"
+            dots_len = content_width - len(key_str) - len(stars_value) - 2
+            dots = '.' * max(dots_len, 3)
+
+            char_width = font_size * 0.6
+            full_line = f"{key_str} {dots} {stars_value}"
+            line_width = len(full_line) * char_width
+            start_x = (width - line_width) / 2
+
+            # Gray prefix: "Stars Earned: ... 120 "
+            num_part = stars_value.split(' ★')[0]
+            prefix = f"{key_str} {dots} {num_part} "
+            svg += f'<text x="{start_x}" y="{y}" class="gray">{prefix}</text>\n'
+
+            # Yellow star
+            star_x = start_x + len(prefix) * char_width
+            svg += f'<text x="{star_x}" y="{y}" class="yellow">★</text>\n'
+        elif color == "project_redact" and line:
+            # Split line into segments around redaction blocks
+            char_width = font_size * 0.6
+            line_width = len(line) * char_width
+            start_x = (width - line_width) / 2
+            redact_marker = "████████"
+            parts = line.split(redact_marker)
+            x_pos = start_x
+            for i, part in enumerate(parts):
+                if part:
+                    escaped = escape_xml(part)
+                    svg += f'<text x="{x_pos}" y="{y}" class="gray">{escaped}</text>\n'
+                    x_pos += len(part) * char_width
+                if i < len(parts) - 1:
+                    svg += f'<text x="{x_pos}" y="{y}" class="redact">{escape_xml(redact_marker)}</text>\n'
+                    x_pos += len(redact_marker) * char_width
         elif line:  # Non-empty line
             escaped = escape_xml(line)
             svg += f'<text x="{width // 2}" y="{y}" text-anchor="middle" class="{color}">{escaped}</text>\n'
