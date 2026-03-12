@@ -71,14 +71,14 @@ text {
 <text x="400" y="854" text-anchor="middle" class="green">-------------------------------------- GITHUB STATS --------------------------------------</text>
 <text x="400" y="884" text-anchor="middle" class="gray">Repositories: ........................................................................ 220</text>
 <text x="400" y="904" text-anchor="middle" class="gray">Contributed To: ....................................................................... 47</text>
-<text x="400" y="924" text-anchor="middle" class="gray">Total Commits: ...................................................................... 7232</text>
-<text x="400" y="944" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 419</text>
-<text x="400" y="964" text-anchor="middle" class="gray">Stars Earned: ........................................................................ 119</text>
+<text x="400" y="924" text-anchor="middle" class="gray">Total Commits: ...................................................................... 7266</text>
+<text x="400" y="944" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 432</text>
+<text x="400" y="964" text-anchor="middle" class="gray">Stars Earned: ........................................................................ 120</text>
 <text x="22.0" y="984" class="gray">Lines of Code: ..................................... 7,360,005 ( </text>
 <text x="568.0" y="984" class="green">+15,449,601</text>
 <text x="660.4" y="984" class="gray">, </text>
 <text x="677.1999999999999" y="984" class="red">-8,089,596</text>
 <text x="761.1999999999999" y="984" class="gray"> )</text>
 <text x="400" y="1014" text-anchor="middle" class="gray">// TODO: write great footer</text>
-<text x="400" y="1044" text-anchor="middle" class="gray">Last Updated: 2026-03-11</text>
+<text x="400" y="1044" text-anchor="middle" class="gray">Last Updated: 2026-03-12</text>
 </svg>
