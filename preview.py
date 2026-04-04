@@ -80,41 +80,59 @@ def merge_with_cache(live_stats, cached_stats, stat_type):
     return merged
 
 
-def get_claude_stats():
-    """Parse Claude Code JSONL files to get token usage."""
-    claude_dir = Path.home() / ".claude" / "projects"
-    total_input = 0
-    total_output = 0
-    total_cache_creation = 0
-    total_cache_read = 0
-    session_count = 0
-    message_count = 0
+def _load_checkpoint():
+    """Load the checkpoint of already-counted JSONL files."""
+    checkpoint_file = Path(__file__).parent / "cache" / "claude_checkpoint.json"
+    if checkpoint_file.exists():
+        try:
+            with open(checkpoint_file) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, KeyError):
+            pass
+    return {}
 
-    if claude_dir.exists():
-        for jsonl_file in claude_dir.rglob("*.jsonl"):
-            session_count += 1
+
+def _save_checkpoint(checkpoint):
+    """Save the checkpoint of counted JSONL files."""
+    cache_dir = Path(__file__).parent / "cache"
+    cache_dir.mkdir(exist_ok=True)
+    with open(cache_dir / "claude_checkpoint.json", 'w') as f:
+        json.dump(checkpoint, f)
+
+
+def _count_jsonl_file(filepath):
+    """Count tokens/messages in a single JSONL file. Returns stats dict."""
+    stats = {'input_tokens': 0, 'output_tokens': 0, 'cache_creation': 0,
+             'cache_read': 0, 'messages': 0}
+    with open(filepath, 'r') as f:
+        for line in f:
             try:
-                with open(jsonl_file, 'r') as f:
-                    for line in f:
-                        try:
-                            data = json.loads(line)
-                            # Tokens are nested in message.usage
-                            if 'message' in data and isinstance(data['message'], dict):
-                                usage = data['message'].get('usage', {})
-                                if usage:
-                                    message_count += 1
-                                    total_input += usage.get('input_tokens', 0)
-                                    total_output += usage.get('output_tokens', 0)
-                                    total_cache_creation += usage.get('cache_creation_input_tokens', 0)
-                                    total_cache_read += usage.get('cache_read_input_tokens', 0)
-                        except json.JSONDecodeError:
-                            continue
-            except Exception:
+                data = json.loads(line)
+                if 'message' in data and isinstance(data['message'], dict):
+                    usage = data['message'].get('usage', {})
+                    if usage:
+                        stats['messages'] += 1
+                        stats['input_tokens'] += usage.get('input_tokens', 0)
+                        stats['output_tokens'] += usage.get('output_tokens', 0)
+                        stats['cache_creation'] += usage.get('cache_creation_input_tokens', 0)
+                        stats['cache_read'] += usage.get('cache_read_input_tokens', 0)
+            except json.JSONDecodeError:
                 continue
+    return stats
 
-    # If no local data found, try to load from cache (for GitHub Actions)
+
+def get_claude_stats():
+    """Parse Claude Code JSONL files using incremental checkpoint.
+
+    Tracks which files have been counted and their sizes. On each run:
+    - New files: count fully, add to totals
+    - Grown files: re-count, add delta to totals
+    - Pruned files: ignored (totals preserved)
+    """
+    claude_dir = Path.home() / ".claude" / "projects"
     cached = _load_stats_cache()
-    if session_count == 0:
+
+    if not claude_dir.exists():
         if cached and 'claude' in cached:
             return cached['claude']
         return {
@@ -123,28 +141,77 @@ def get_claude_stats():
             'messages': 0, 'cost_estimate': 0,
         }
 
+    checkpoint = _load_checkpoint()
+    counted_files = checkpoint.get('files', {})
+    bootstrapping = len(counted_files) == 0
+
+    # Start from cached totals (preserves history from pruned files)
+    totals = {
+        'input_tokens': 0, 'output_tokens': 0, 'cache_creation': 0,
+        'cache_read': 0, 'messages': 0, 'sessions': 0,
+    }
+    if cached and 'claude' in cached:
+        for key in totals:
+            totals[key] = cached['claude'].get(key, 0)
+
+    for jsonl_file in claude_dir.rglob("*.jsonl"):
+        filepath = str(jsonl_file)
+        try:
+            file_size = jsonl_file.stat().st_size
+        except OSError:
+            continue
+
+        prev = counted_files.get(filepath)
+
+        if prev and prev['size'] == file_size:
+            # Already fully counted, no change
+            continue
+
+        # New or grown file — count it
+        try:
+            file_stats = _count_jsonl_file(filepath)
+        except Exception:
+            continue
+
+        if bootstrapping:
+            # First run: just record files without adding to totals,
+            # since the cache already reflects these files
+            counted_files[filepath] = {'size': file_size, **file_stats}
+            continue
+
+        if prev:
+            # File grew — add only the delta
+            for key in ('input_tokens', 'output_tokens', 'cache_creation',
+                        'cache_read', 'messages'):
+                delta = file_stats[key] - prev.get(key, 0)
+                if delta > 0:
+                    totals[key] += delta
+        else:
+            # Brand new file
+            totals['sessions'] += 1
+            for key in ('input_tokens', 'output_tokens', 'cache_creation',
+                        'cache_read', 'messages'):
+                totals[key] += file_stats[key]
+
+        counted_files[filepath] = {'size': file_size, **file_stats}
+
+    # Save updated checkpoint
+    _save_checkpoint({'files': counted_files})
+
+    # Recalculate derived fields
+    totals['total_tokens'] = (totals['input_tokens'] + totals['output_tokens']
+                              + totals['cache_creation'] + totals['cache_read'])
+
     # Cost estimate using Claude pricing
     # Sonnet: $3/MTok input, $15/MTok output
     # Opus: $15/MTok input, $75/MTok output (assume mix, use higher)
     # Cache writes cost same as input, cache reads are 90% cheaper
-    input_cost = (total_input + total_cache_creation) * 10 / 1_000_000  # ~avg
-    output_cost = total_output * 30 / 1_000_000  # ~avg
-    cache_read_cost = total_cache_read * 1 / 1_000_000  # 90% discount
-    cost_estimate = input_cost + output_cost + cache_read_cost
+    input_cost = (totals['input_tokens'] + totals['cache_creation']) * 10 / 1_000_000
+    output_cost = totals['output_tokens'] * 30 / 1_000_000
+    cache_read_cost = totals['cache_read'] * 1 / 1_000_000
+    totals['cost_estimate'] = input_cost + output_cost + cache_read_cost
 
-    live_stats = {
-        'input_tokens': total_input,
-        'output_tokens': total_output,
-        'cache_creation': total_cache_creation,
-        'cache_read': total_cache_read,
-        'total_tokens': total_input + total_output + total_cache_creation + total_cache_read,
-        'sessions': session_count,
-        'messages': message_count,
-        'cost_estimate': cost_estimate
-    }
-
-    # Merge with cache — cumulative stats should only go up
-    return merge_with_cache(live_stats, cached.get('claude') if cached else None, 'claude')
+    return totals
 
 
 def run_gh_api(endpoint, method="GET"):
