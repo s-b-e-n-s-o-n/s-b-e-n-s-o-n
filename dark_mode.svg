@@ -71,7 +71,7 @@ text {
 <text x="400" y="794" text-anchor="middle" class="gray">Total Tokens: ...................................................................... 38.5B</text>
 <text x="400" y="814" text-anchor="middle" class="gray">Est. API Cost Saved: ............................................................. $59,599</text>
 <text x="400" y="854" text-anchor="middle" class="green">-------------------------------------- GITHUB STATS --------------------------------------</text>
-<text x="400" y="884" text-anchor="middle" class="gray">Repositories: ........................................................................ 233</text>
+<text x="400" y="884" text-anchor="middle" class="gray">Repositories: ........................................................................ 234</text>
 <text x="400" y="904" text-anchor="middle" class="gray">Contributed To: ....................................................................... 62</text>
 <text x="400" y="924" text-anchor="middle" class="gray">Total Commits: ...................................................................... 7960</text>
 <text x="400" y="944" text-anchor="middle" class="gray">Pull Requests: ....................................................................... 708</text>
