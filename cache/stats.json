@@ -1,34 +1,34 @@
 {
-  "timestamp": "2026-07-25T23:34:19.565669",
+  "timestamp": "2026-07-26T04:12:34.414627",
   "claude": {
-    "input_tokens": 109566649,
-    "output_tokens": 543124276,
-    "cache_creation": 4892032666,
-    "cache_read": 122809017991,
-    "total_tokens": 128353741582,
+    "input_tokens": 109566660,
+    "output_tokens": 543128811,
+    "cache_creation": 4892039576,
+    "cache_read": 122810173100,
+    "total_tokens": 128354908147,
     "sessions": 17722,
-    "messages": 1079069,
-    "cost_estimate": 189118.739421
+    "messages": 1079075,
+    "cost_estimate": 189120.09979
   },
   "token_usage": {
-    "input_tokens": 109566649,
-    "output_tokens": 543124276,
-    "cache_creation": 4892032666,
-    "cache_read": 122809017991,
-    "total_tokens": 128353741582,
+    "input_tokens": 109566660,
+    "output_tokens": 543128811,
+    "cache_creation": 4892039576,
+    "cache_read": 122810173100,
+    "total_tokens": 128354908147,
     "sessions": 17722,
-    "messages": 1079069,
-    "cost_estimate": 189118.739421,
+    "messages": 1079075,
+    "cost_estimate": 189120.09979,
     "providers": {
       "claude": {
-        "input_tokens": 109566649,
-        "output_tokens": 543124276,
-        "cache_creation": 4892032666,
-        "cache_read": 122809017991,
-        "total_tokens": 128353741582,
+        "input_tokens": 109566660,
+        "output_tokens": 543128811,
+        "cache_creation": 4892039576,
+        "cache_read": 122810173100,
+        "total_tokens": 128354908147,
         "sessions": 17722,
-        "messages": 1079069,
-        "cost_estimate": 189118.739421
+        "messages": 1079075,
+        "cost_estimate": 189120.09979
       },
       "other": {
         "input_tokens": 0,
@@ -51,7 +51,7 @@
     "contributed_repos": 98,
     "prs": 2406,
     "issues": 55,
-    "loc_added": 61680828,
+    "loc_added": 61681520,
     "loc_deleted": 55878932,
     "loc_total": 30997657
   }
