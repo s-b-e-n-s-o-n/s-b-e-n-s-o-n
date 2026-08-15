@@ -1,58 +1,58 @@
 {
-  "timestamp": "2026-08-14T23:30:31.259963",
+  "timestamp": "2026-08-15T04:06:16.955632",
   "claude": {
-    "input_tokens": 110014092,
-    "output_tokens": 583344332,
-    "cache_creation": 5110257929,
-    "cache_read": 131702037569,
-    "total_tokens": 137505653922,
-    "sessions": 17819,
-    "messages": 1146622,
-    "cost_estimate": 201405.087739
+    "input_tokens": 110018359,
+    "output_tokens": 583391183,
+    "cache_creation": 5110548791,
+    "cache_read": 131711242504,
+    "total_tokens": 137515200837,
+    "sessions": 17821,
+    "messages": 1146710,
+    "cost_estimate": 201418.64949399998
   },
   "token_usage": {
-    "input_tokens": 110014092,
-    "output_tokens": 583344332,
-    "cache_creation": 5110257929,
-    "cache_read": 131702037569,
-    "total_tokens": 137505653922,
-    "sessions": 17819,
-    "messages": 1146622,
-    "cost_estimate": 201405.087739,
+    "input_tokens": 1644162289,
+    "output_tokens": 714219477,
+    "cache_creation": 5110548791,
+    "cache_read": 168271556232,
+    "total_tokens": 175740486789,
+    "sessions": 17821,
+    "messages": 1146710,
+    "cost_estimate": 227646.96062415,
     "providers": {
       "claude": {
-        "input_tokens": 110014092,
-        "output_tokens": 583344332,
-        "cache_creation": 5110257929,
-        "cache_read": 131702037569,
-        "total_tokens": 137505653922,
-        "sessions": 17819,
-        "messages": 1146622,
-        "cost_estimate": 201405.087739
+        "input_tokens": 110018359,
+        "output_tokens": 583391183,
+        "cache_creation": 5110548791,
+        "cache_read": 131711242504,
+        "total_tokens": 137515200837,
+        "sessions": 17821,
+        "messages": 1146710,
+        "cost_estimate": 201418.64949399998
       },
       "other": {
-        "input_tokens": 0,
-        "output_tokens": 0,
+        "input_tokens": 1534143930,
+        "output_tokens": 130828294,
         "cache_creation": 0,
-        "cache_read": 0,
-        "total_tokens": 0,
+        "cache_read": 36560313728,
+        "total_tokens": 38225285952,
         "sessions": 0,
         "messages": 0,
-        "cost_estimate": 0
+        "cost_estimate": 26228.311130150003
       }
     }
   },
   "github": {
     "repos": 304,
-    "commits": 12989,
+    "commits": 13007,
     "stars": 330,
     "followers": 4,
     "following": 0,
     "contributed_repos": 104,
-    "prs": 2892,
+    "prs": 2913,
     "issues": 105,
-    "loc_added": 62383829,
-    "loc_deleted": 56200778,
+    "loc_added": 62628410,
+    "loc_deleted": 56280774,
     "loc_total": 30997657
   }
 }
