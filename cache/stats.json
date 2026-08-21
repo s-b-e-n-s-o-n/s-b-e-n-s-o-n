@@ -1,56 +1,56 @@
 {
-  "timestamp": "2026-08-20T23:30:26.191864",
+  "timestamp": "2026-08-21T04:06:38.089720",
   "claude": {
-    "input_tokens": 110111406,
-    "output_tokens": 603963507,
-    "cache_creation": 5235590131,
-    "cache_read": 136477296792,
-    "total_tokens": 142426961836,
+    "input_tokens": 110111947,
+    "output_tokens": 604100885,
+    "cache_creation": 5236529347,
+    "cache_read": 136506250622,
+    "total_tokens": 142456992801,
     "sessions": 17840,
-    "messages": 1182697,
-    "cost_estimate": 208053.217372
+    "messages": 1182969,
+    "cost_estimate": 208095.69011199998
   },
   "token_usage": {
-    "input_tokens": 110111406,
-    "output_tokens": 603963507,
-    "cache_creation": 5235590131,
-    "cache_read": 136477296792,
-    "total_tokens": 142426961836,
+    "input_tokens": 1651563842,
+    "output_tokens": 735650713,
+    "cache_creation": 5236529347,
+    "cache_read": 173452201854,
+    "total_tokens": 181075945756,
     "sessions": 17840,
-    "messages": 1182697,
-    "cost_estimate": 208053.217372,
+    "messages": 1182969,
+    "cost_estimate": 234546.19248282997,
     "providers": {
       "claude": {
-        "input_tokens": 110111406,
-        "output_tokens": 603963507,
-        "cache_creation": 5235590131,
-        "cache_read": 136477296792,
-        "total_tokens": 142426961836,
+        "input_tokens": 110111947,
+        "output_tokens": 604100885,
+        "cache_creation": 5236529347,
+        "cache_read": 136506250622,
+        "total_tokens": 142456992801,
         "sessions": 17840,
-        "messages": 1182697,
-        "cost_estimate": 208053.217372
+        "messages": 1182969,
+        "cost_estimate": 208095.69011199998
       },
       "other": {
-        "input_tokens": 0,
-        "output_tokens": 0,
+        "input_tokens": 1541451895,
+        "output_tokens": 131549828,
         "cache_creation": 0,
-        "cache_read": 0,
-        "total_tokens": 0,
+        "cache_read": 36945951232,
+        "total_tokens": 38618952955,
         "sessions": 0,
         "messages": 0,
-        "cost_estimate": 0
+        "cost_estimate": 26450.50237083
       }
     }
   },
   "github": {
     "repos": 305,
-    "commits": 13339,
+    "commits": 13342,
     "stars": 352,
     "followers": 4,
     "following": 0,
     "contributed_repos": 104,
-    "prs": 3157,
-    "issues": 154,
+    "prs": 3165,
+    "issues": 155,
     "loc_added": 62688521,
     "loc_deleted": 56294330,
     "loc_total": 30997657
