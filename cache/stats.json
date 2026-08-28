@@ -1,44 +1,44 @@
 {
-  "timestamp": "2026-08-27T04:07:19.830299",
+  "timestamp": "2026-08-27T23:30:25.858579",
   "claude": {
-    "input_tokens": 110161344,
-    "output_tokens": 620857881,
-    "cache_creation": 5328380489,
-    "cache_read": 139771924375,
-    "total_tokens": 145831324089,
-    "sessions": 17866,
-    "messages": 1207699,
-    "cost_estimate": 212783.079135
+    "input_tokens": 110168732,
+    "output_tokens": 623584279,
+    "cache_creation": 5341092915,
+    "cache_read": 140261940810,
+    "total_tokens": 146336786736,
+    "sessions": 17884,
+    "messages": 1211414,
+    "cost_estimate": 213482.08565
   },
   "token_usage": {
-    "input_tokens": 1766671317,
-    "output_tokens": 763576900,
-    "cache_creation": 5328380489,
-    "cache_read": 181109035927,
-    "total_tokens": 188967664633,
-    "sessions": 17866,
-    "messages": 1207699,
-    "cost_estimate": 242338.33408083,
+    "input_tokens": 110168732,
+    "output_tokens": 623584279,
+    "cache_creation": 5341092915,
+    "cache_read": 140261940810,
+    "total_tokens": 146336786736,
+    "sessions": 17884,
+    "messages": 1211414,
+    "cost_estimate": 213482.08565,
     "providers": {
       "claude": {
-        "input_tokens": 110161344,
-        "output_tokens": 620857881,
-        "cache_creation": 5328380489,
-        "cache_read": 139771924375,
-        "total_tokens": 145831324089,
-        "sessions": 17866,
-        "messages": 1207699,
-        "cost_estimate": 212783.079135
+        "input_tokens": 110168732,
+        "output_tokens": 623584279,
+        "cache_creation": 5341092915,
+        "cache_read": 140261940810,
+        "total_tokens": 146336786736,
+        "sessions": 17884,
+        "messages": 1211414,
+        "cost_estimate": 213482.08565
       },
       "other": {
-        "input_tokens": 1656509973,
-        "output_tokens": 142719019,
+        "input_tokens": 0,
+        "output_tokens": 0,
         "cache_creation": 0,
-        "cache_read": 41337111552,
-        "total_tokens": 43136340544,
+        "cache_read": 0,
+        "total_tokens": 0,
         "sessions": 0,
         "messages": 0,
-        "cost_estimate": 29555.254945829998
+        "cost_estimate": 0
       }
     }
   },
