@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-30T04:01:00.139577",
+  "timestamp": "2026-08-31T02:26:56.951339",
   "claude": {
     "input_tokens": 110682483,
     "output_tokens": 647201851,
@@ -10,42 +10,10 @@
     "messages": 1244231,
     "cost_estimate": 219116.81697500002
   },
-  "token_usage": {
-    "input_tokens": 2000628808,
-    "output_tokens": 812638456,
-    "cache_creation": 5453157709,
-    "cache_read": 193580121189,
-    "total_tokens": 201846546162,
-    "sessions": 17923,
-    "messages": 1244231,
-    "cost_estimate": 254126.65559087,
-    "providers": {
-      "claude": {
-        "input_tokens": 110682483,
-        "output_tokens": 647201851,
-        "cache_creation": 5453157709,
-        "cache_read": 144062359525,
-        "total_tokens": 150273401568,
-        "sessions": 17923,
-        "messages": 1244231,
-        "cost_estimate": 219116.81697500002
-      },
-      "other": {
-        "input_tokens": 1889946325,
-        "output_tokens": 165436605,
-        "cache_creation": 0,
-        "cache_read": 49517761664,
-        "total_tokens": 51573144594,
-        "sessions": 0,
-        "messages": 0,
-        "cost_estimate": 35009.83861587
-      }
-    }
-  },
   "github": {
     "repos": 34,
     "commits": 13821,
-    "stars": 368,
+    "stars": 370,
     "followers": 4,
     "following": 0,
     "contributed_repos": 104,
