@@ -1,44 +1,44 @@
 {
-  "timestamp": "2026-09-04T23:30:46.698458",
+  "timestamp": "2026-09-05T04:06:39.179747",
   "claude": {
-    "input_tokens": 112445780,
-    "output_tokens": 689250065,
-    "cache_creation": 5667528252,
-    "cache_read": 152300867335,
-    "total_tokens": 158770091432,
+    "input_tokens": 112485958,
+    "output_tokens": 689439180,
+    "cache_creation": 5668512136,
+    "cache_read": 152357409684,
+    "total_tokens": 158827846958,
     "sessions": 17953,
-    "messages": 1311846,
-    "cost_estimate": 230778.109605
+    "messages": 1312223,
+    "cost_estimate": 230850.566024
   },
   "token_usage": {
-    "input_tokens": 112445780,
-    "output_tokens": 689250065,
-    "cache_creation": 5667528252,
-    "cache_read": 152300867335,
-    "total_tokens": 158770091432,
+    "input_tokens": 1129126259,
+    "output_tokens": 786868883,
+    "cache_creation": 5668512136,
+    "cache_read": 186333635988,
+    "total_tokens": 193918143266,
     "sessions": 17953,
-    "messages": 1311846,
-    "cost_estimate": 230778.109605,
+    "messages": 1312223,
+    "cost_estimate": 258551.47000308,
     "providers": {
       "claude": {
-        "input_tokens": 112445780,
-        "output_tokens": 689250065,
-        "cache_creation": 5667528252,
-        "cache_read": 152300867335,
-        "total_tokens": 158770091432,
+        "input_tokens": 112485958,
+        "output_tokens": 689439180,
+        "cache_creation": 5668512136,
+        "cache_read": 152357409684,
+        "total_tokens": 158827846958,
         "sessions": 17953,
-        "messages": 1311846,
-        "cost_estimate": 230778.109605
+        "messages": 1312223,
+        "cost_estimate": 230850.566024
       },
       "other": {
-        "input_tokens": 0,
-        "output_tokens": 0,
+        "input_tokens": 1016640301,
+        "output_tokens": 97429703,
         "cache_creation": 0,
-        "cache_read": 0,
-        "total_tokens": 0,
+        "cache_read": 33976226304,
+        "total_tokens": 35090296308,
         "sessions": 0,
         "messages": 0,
-        "cost_estimate": 0
+        "cost_estimate": 27700.903979079994
       }
     }
   },
